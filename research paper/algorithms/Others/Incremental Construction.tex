@@ -1,0 +1,20 @@
+	\begin{algorithm}
+	\caption{Procedure Incremental-Construction. Variable recreatedModel is initialized as empty. Prefix OM resembles the original model, while RM the recreated model. }
+	\label{incrementalConstruction}
+	\begin{algorithmic}[1]
+		\Procedure{Incremental-Construction}{equationTrace}
+		\For{$i\gets 0, equationTrace.Size()$}
+			\State $equation \gets equationTrace[i]$
+			\State $recreatedModel.addEquation(equation)$
+			\State $calculateStructureMetric(equation, structure\_OM, structure\_RM)$
+			\State $calculateEquationMetric(equation, functionality\_OM, functionality\_RM)$
+			\State $calculateActivityMetric(equation, activity\_OM, activity\_RM)$
+			\State $calculateTimeConstraintMetric(equation, timeConstraint\_OM, timeConstraint\_RM)$
+		\EndFor
+		
+		\State $calculateGraphEditDistance(traceMetricsArray)$
+		\State $calculatePropagationMetric()$
+				
+		\EndProcedure
+	\end{algorithmic}
+	\end{algorithm}

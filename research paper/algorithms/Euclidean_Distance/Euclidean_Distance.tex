@@ -1,0 +1,27 @@
+\begin{algorithm}
+%	\caption{Get Distances. The distance is the euclidean distance between the values of the observed equation and a neighbor's equation, after both were evaluated with the time steps of the observed equation. 
+%		\newline \textbf{Input}: Direct successors and an observed equation. 
+%		\newline \textbf{Output}: List of the distance of all neighbors with respect to the observation. }
+	\caption{Measure-Distances}
+	\label{measureDistances}
+	\begin{algorithmic}[1]
+		\Procedure{measure-distances}{directSuccessors, observedEquation}
+		
+		\State $timeSteps\gets \vars{observedEquation.timeSteps}$
+		\State $observedFunction\gets \vars{observedEquation.fittedFunction}$
+		
+		\ForEach {$neighbor \in directSuccessors$}
+			\State $neighborFunction\gets \vars{neighbor.fittedFunction}$
+			\State $neighborPoints \gets \func{evaluatefunction(\vars{neighborFunction, timeSteps})}$
+			\State $observedPoints \gets \func{evaluatefunction(\vars{observedFunction, timeSteps})}$
+			\State $distance \gets \func{getEuclideanDistance(\vars{observedPoints, neighborPoints})}$
+			\State $distance \gets 1/(1+distance)$
+			\State $distanceList.push(distance)$
+		\EndFor
+		
+		\State \Return $distanceList$
+	
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+

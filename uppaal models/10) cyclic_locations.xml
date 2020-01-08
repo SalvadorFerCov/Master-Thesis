@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.</declaration>
+	<template>
+		<name x="5" y="5">Template</name>
+		<declaration>// Place local declarations here.
+clock t=0.0, tg=0.0;
+int x=0;</declaration>
+		<location id="id0" x="-1385" y="-960">
+			<name x="-1394" y="-943">L1</name>
+			<label kind="invariant" x="-1402" y="-926">t&lt;=1</label>
+		</location>
+		<location id="id1" x="-1547" y="-960">
+			<name x="-1555" y="-943">Init</name>
+			<urgent/>
+		</location>
+		<location id="id2" x="-1198" y="-960">
+			<name x="-1207" y="-943">L2</name>
+			<label kind="invariant" x="-1215" y="-926">t&lt;=1</label>
+		</location>
+		<init ref="id1"/>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-1317" y="-858">tg&gt;20</label>
+			<label kind="assignment" x="-1309" y="-841">tg=0</label>
+			<nail x="-1300" y="-858"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-1317" y="-986">tg&gt;10</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-1428" y="-1028">t&gt;=1 &amp;&amp; tg&lt;=10</label>
+			<label kind="assignment" x="-1411" y="-1045">x=x+1, t=0</label>
+			<nail x="-1343" y="-1003"/>
+			<nail x="-1411" y="-1003"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id0"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-1241" y="-1028">t&gt;=1 &amp;&amp; tg&lt;=20</label>
+			<label kind="assignment" x="-1224" y="-1045">x=x-1, t=0</label>
+			<nail x="-1156" y="-1003"/>
+			<nail x="-1224" y="-1003"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+Process = Template();
+// List one or more processes to be composed into a system.
+system Process;
+    </system>
+	<queries>
+		<query>
+			<formula>simulate 10 [&lt;=100] {Process.x}
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>

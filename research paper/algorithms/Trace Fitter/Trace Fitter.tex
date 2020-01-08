@@ -1,0 +1,41 @@
+	\documentclass{article}
+	\usepackage{amsmath}
+	\usepackage{algorithm}
+	\usepackage{algpseudocode}  
+	\newcommand{\vars}{\texttt}
+	\newcommand{\func}{\textrm}
+	\algnewcommand\algorithmicforeach{\textbf{for each}}
+	\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+	
+	\begin{document}
+		
+	\begin{algorithm}
+		\caption{Learner. An observation consists of a list of values, with the format: (time,value). The behavior of an observation is expressed as a list of mathematical equations, which are afterwards incorporated to a graph model \textit{lm}.  All inputs are given by the user. 
+		\newline \textbf{Inputs}: Observed data \textit{observation}, buffer size \textit{bufferSize}, time step \textit{timeStep}, empty learned model \textit{lm}.
+		\newline \textbf{Output}: Learned model \textit{lm}}
+		\label{learner}
+		\begin{algorithmic}[1]
+			\Procedure{learner}{observation}
+			
+			\State $trace \gets \func{parseObservation(\vars{observation})}$
+			\State $buffer \gets \func{bufferInit}(\vars{timeStep, bufferSize, trace})$
+			\State $equationTrace \gets \func{fit} (\vars{timeStep, buffer, trace})$
+			
+			\If{$ lm.isEmpty()$}
+				\ForEach {$equation \in equationTrace $}
+					\State $\func{addEquationToLearnedModel(\vars{equation})}$
+				\EndFor
+			\Else
+				\State $directSuccessors \gets \func{getDirectSuccessors(\vars{lm.initialLocation})}$
+				\ForEach {$equation \in equationTrace $}
+					\State $directSuccessorsDistances \gets \func{getDistances(\vars{directSuccessors,equation})}$
+					\State $lastModifiedNode \gets \func{addEquationToLearnedModel(\vars{directSuccessorsDistances})}$
+					\State $directSuccessors\gets \func{getDirectSuccessors(\vars{lastModifiedNode})}$
+				\EndFor
+			\EndIf
+			\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}
+
+\end{document} 
+

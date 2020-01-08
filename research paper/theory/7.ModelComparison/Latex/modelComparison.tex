@@ -1,0 +1,45 @@
+As the source of the traces to be analyzed come from the execution of a query in UPPAAL,
+%
+%As there exists an original model with its recreated version, we can now retrieve traces from both of them and compare their values.
+%
+we us the same query to also obtain traces from the recreated model. 
+%
+This ensures that the same number of traces are extracted from the two models and under the same conditions. 
+%
+It is explained in the following section how the comparison of the traces from the two models is performed, and how the compatibility of their functionalities is determined. 
+
+\section{The Trace-Comparison Algorithm}
+%We need to add the reference of the name of the variable
+For simplicity, we assume that the query was already executed in the recreated model and that the traces were stored in the variable $simResults$. 
+%
+We also assume that the original trace from the first simulation is already stored in a list of simulations called $originalResults$. 
+%
+The filtering process of the data from the traces of a recreated model is the same as the one explained in Chapter \ref{Model Recreation}. 
+%
+The only difference is that when a numerical trace is found in $simResults$, we now proceed and compare its values against the traces from  $originalResults$.
+
+\input{./algorithms/UPPAAL/traceComparisonAlgorithm.tex}
+
+The comparison of the data of a trace from a recreated model consists on searching through all of the original traces and to compare the values of a variable at all time units of the simulation. 
+%
+As all traces have a tree map structure, it is very simple to retrieve the value of a variable at an exact time unit, by using the $getValue()$ method. 
+%
+It only requires a key that represents the $x$ value of a trace (or time unit of the simulation) in order to return the value of the variable that was analyzed.
+%
+The $getValue()$ method is used to obtain a value of a variable from $simResults$, based on the key of every trace stored in $originalResults$.
+%
+If a value from $simResults$ is obtained, then the original value from $originalResults$ is retrieved by using the same key.
+%
+Whenever the two values differ significantly, it means that a functionality of the recreated model does not match the functionality of the original model in a certain time unit.  
+%
+And if a value cannot be retrieved from $simResults$, it means that the recreated model was not able to identify a behavior from a certain time unit of the original model.  
+%
+%The limitations are that the traces are compared against each other at every time unit of the simulation. 
+%
+This approach may give negative results when comparing traces of non-deterministic systems. 
+%
+It might be the case that two models output different traces with the same non-deterministic functionality. 
+%
+In this scenario, it is most likely that two models are distinguished as incompatible even if they are not. 
+%
+

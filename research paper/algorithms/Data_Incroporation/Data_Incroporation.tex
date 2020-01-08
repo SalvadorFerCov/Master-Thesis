@@ -1,0 +1,26 @@
+\begin{algorithm}
+	\caption{Incremental-Learning. An observed equation is added to the learned model as a new node or as a merged node, based on the closeness that it has among direct successors.
+	\newline Input: similarity threshold \textit{sim\_th}, given by the user}
+%	\caption{Incremental-Learning}
+	\label{incrementalLearning}
+	\begin{algorithmic}[1]
+		\Procedure{Incremental-Learning}{distances, observedEquation}
+		
+		\State $closestNode \gets \func{getClosestDistanceAboveThreshold(\vars{distances, sim\_th})}$
+		\State $farNode \gets \func{getClosestDistanceBelowThreshold(\vars{distances, sim\_th})}$
+		
+		\If {closestNode.isNotEmpty()}
+			\State $nextNode \gets \func{addLeastExpensiveChange(\vars{closestNode, observedEquation})}$
+			\State	\Return $nextNodeToTraverse$
+		\EndIf
+		
+		\If {farNode.isNotEmpty()}
+			\State $nextNode \gets \func{addNodeToLearnedModel(\vars{farNode, observedEquation})}$
+			\State	\Return $nextNode$
+		\EndIf
+	
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
+

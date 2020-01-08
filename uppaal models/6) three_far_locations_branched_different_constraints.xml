@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.</declaration>
+	<template>
+		<name x="5" y="5">Template</name>
+		<declaration>// Place local declarations here.
+clock t=0.0, tg=0.0;
+double x=0.0;</declaration>
+		<location id="id0" x="-1776" y="-1224">
+			<name x="-1785" y="-1190">D1</name>
+			<label kind="invariant" x="-1786" y="-1207">t&lt;=1</label>
+		</location>
+		<location id="id1" x="-1173" y="-1045">
+			<name x="-1147" y="-1053">Finish</name>
+		</location>
+		<location id="id2" x="-1572" y="-1045">
+			<name x="-1581" y="-1028">L1</name>
+			<label kind="invariant" x="-1589" y="-1011">t&lt;=1</label>
+		</location>
+		<location id="id3" x="-2006" y="-1037">
+			<name x="-2014" y="-1020">Init</name>
+			<urgent/>
+		</location>
+		<location id="id4" x="-1572" y="-1224">
+			<name x="-1581" y="-1207">L4</name>
+			<label kind="invariant" x="-1589" y="-1190">t&lt;=1</label>
+		</location>
+		<location id="id5" x="-1564" y="-867">
+			<name x="-1573" y="-850">L5</name>
+			<label kind="invariant" x="-1581" y="-833">t&lt;=1</label>
+		</location>
+		<location id="id6" x="-1768" y="-867">
+			<name x="-1777" y="-825">D2</name>
+			<label kind="invariant" x="-1778" y="-850">t&lt;=1</label>
+		</location>
+		<branchpoint id="id7" x="-1921" y="-1045">
+		</branchpoint>
+		<init ref="id3"/>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id6"/>
+			<label kind="guard" x="-1751" y="-952">t&gt;=1</label>
+			<label kind="assignment" x="-1751" y="-969">t=0</label>
+			<nail x="-1717" y="-935"/>
+			<nail x="-1768" y="-935"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-1785" y="-1343">t&gt;=1</label>
+			<label kind="assignment" x="-1785" y="-1326">t=0</label>
+			<nail x="-1742" y="-1292"/>
+			<nail x="-1801" y="-1292"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id5"/>
+			<label kind="guard" x="-1683" y="-901">tg&gt;=5</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id4"/>
+			<label kind="guard" x="-1691" y="-1258">tg&gt;=5</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-1258" y="-892">tg&gt;30</label>
+			<nail x="-1173" y="-867"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+			<label kind="probability" x="-1870" y="-1011">1</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-1249" y="-1062">tg&gt;10</label>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-1249" y="-1258">tg&gt;15</label>
+			<nail x="-1173" y="-1224"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id0"/>
+			<label kind="probability" x="-1887" y="-1139">1</label>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id2"/>
+			<label kind="probability" x="-1878" y="-1079">1</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id7"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-1615" y="-1113">t&gt;=1 &amp;&amp; tg&lt;=10</label>
+			<label kind="assignment" x="-1598" y="-1130">x=x+1, t=0</label>
+			<nail x="-1530" y="-1088"/>
+			<nail x="-1598" y="-1088"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id4"/>
+			<label kind="guard" x="-1615" y="-1292">t&gt;=1 &amp;&amp; tg&lt;=15</label>
+			<label kind="assignment" x="-1598" y="-1309">x=x+5, t=0</label>
+			<nail x="-1530" y="-1267"/>
+			<nail x="-1598" y="-1267"/>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id5"/>
+			<label kind="guard" x="-1607" y="-935">t&gt;=1 &amp;&amp; tg&lt;=30</label>
+			<label kind="assignment" x="-1590" y="-952">x=x+5, t=0</label>
+			<nail x="-1522" y="-910"/>
+			<nail x="-1590" y="-910"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+Process = Template();
+// List one or more processes to be composed into a system.
+system Process;
+    </system>
+	<queries>
+		<query>
+			<formula>simulate 10 [&lt;=30] {Process.x}
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>

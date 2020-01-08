@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}  
+\newcommand{\vars}{\texttt}
+\newcommand{\func}{\textrm} 
+\begin{document}
+
+	\begin{algorithm}
+		\caption{Data-Fitter}
+		\label{dataFitter}
+		\begin{algorithmic}[1]
+			\Procedure{fitdata}{timeStep, buffer, traceData}
+%			\\
+			\While{$ windowSlideLimit == false $}
+%			\\
+			\State $lastEquationFits \gets thresholdEvaluation(\vars{lastStackedEQ, buffer})$
+%			\\
+			\If{ $lastEquationFits = true$}
+				\State $updateStack(lastFittedEQ, buffer)$
+				
+			\Else
+			
+			\For{$i\gets 0, buffer.Size() $}
+			\State $x\gets buffer.getKey()$ \Comment{time unit of simulation}
+			\State $y\gets buffer.getValue()$ \Comment{value of variable}
+			\State $observedData.add(x,y)$
+			\EndFor
+%			\newline
+%			
+			\State $polynomialEquation\gets \func{fitPolynomial}(\vars{observedData})$
+			\State $exponentialEquation\gets \func{fitExponential}(\vars{observedData})$
+			\State $harmonicEquation\gets \func{fitHarmonic}(\vars{observedData})$
+			\State $expHarmonicEquation\gets \func{fitExpHarmonic}(\vars{observedData})$
+%			\\
+			\State $bestFittedEquation \gets\func {minError} (\vars{polynomialEquation,}$ 
+			\State $\vars{exponentialEquation}) $
+			\State $\vars{harmonicEquation}) $
+			\State $\vars{expHarmonicEquation}) $
+			\State $\func{FittedEquationsList.add}(\vars{bestFittedEquation})$
+%			\\
+			\EndIf
+			\State $ windowSlideLimit \gets \func{slideBuffer}(\vars{timeStep, traceData})$
+			\EndWhile
+			
+			\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}
+\end{document}
+	

@@ -1,0 +1,46 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Uppaal Model\relax }}{8}{figure.caption.6}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Uppaal Simulation Trace Graph\relax }}{8}{figure.caption.7}
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Uppaal Simulation Trace Data\relax }}{9}{figure.caption.8}
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Graph edit distance example. Illustration taken from \cite {graphMatching}\relax }}{11}{figure.caption.9}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Example of buffer storing information of a trace\relax }}{15}{figure.caption.10}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Learned model example\relax }}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Node addition to learned model example\relax }}{19}{figure.caption.12}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Time constraints replacement in learned model example\relax }}{20}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Time constraints replacement with extra location in learned model example\relax }}{20}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Replacement of the functionality of a location in the learned model example\relax }}{21}{figure.caption.15}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Implementation Data Manager\relax }}{23}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Implementation Fitter Manager \relax }}{24}{figure.caption.17}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Structure of an equation object\relax }}{25}{figure.caption.18}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Implementation Learning Manager\relax }}{26}{figure.caption.19}
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Implementation Graph Matcher\relax }}{27}{figure.caption.20}
+\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Implementation Graph Matcher - Model matched section\relax }}{27}{figure.caption.21}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Experiment 1 Original Model\relax }}{29}{figure.caption.22}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Sub-Experiment 1 - Similarity Prioritized - Learned Model\relax }}{30}{figure.caption.24}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Sub-Experiment 1 - Similarity Prioritized - Learned Model - Observation 10\relax }}{31}{figure.caption.26}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Sub-Experiment 1 - Similarity Prioritized - Learned Model - Observation 26\relax }}{31}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 6.5}{\ignorespaces Sub-Experiment 1 - Similarity Prioritized - Graph Similarity\relax }}{32}{figure.caption.28}
+\contentsline {figure}{\numberline {\relax 6.6}{\ignorespaces Sub-Experiment 1 - Similarity Prioritized - Taken Costs\relax }}{33}{figure.caption.29}
+\contentsline {figure}{\numberline {\relax 6.7}{\ignorespaces Sub-Experiment 1 - Similarity Prioritized - Replacement Costs\relax }}{34}{figure.caption.30}
+\contentsline {figure}{\numberline {\relax 6.8}{\ignorespaces Sub-Experiment 2 - Time and Functionality Prioritized - Learned Model\relax }}{35}{figure.caption.32}
+\contentsline {figure}{\numberline {\relax 6.9}{\ignorespaces Sub-Experiment 2 - Time and Functionality Prioritized - Learned Model - Observation 20\relax }}{36}{figure.caption.34}
+\contentsline {figure}{\numberline {\relax 6.10}{\ignorespaces Sub-Experiment 2 - Time and Functionality Prioritized - Learned Model - Observation 38\relax }}{36}{figure.caption.35}
+\contentsline {figure}{\numberline {\relax 6.11}{\ignorespaces Sub-Experiment 2 - Time and Functionality Prioritized - Graph Similarity\relax }}{37}{figure.caption.36}
+\contentsline {figure}{\numberline {\relax 6.12}{\ignorespaces Sub-Experiment 2 - Time and Functionality Prioritized - Taken Costs\relax }}{38}{figure.caption.37}
+\contentsline {figure}{\numberline {\relax 6.13}{\ignorespaces Sub-Experiment 2 - Time and Functionality Prioritized - Replacement Costs\relax }}{39}{figure.caption.38}
+\contentsline {figure}{\numberline {\relax 6.14}{\ignorespaces Sub-Experiment 3 - Node Addition Prioritized - Learned Model\relax }}{40}{figure.caption.40}
+\contentsline {figure}{\numberline {\relax 6.15}{\ignorespaces Sub-Experiment 3 - Node Addition Prioritized - Learned Model - Observation 20\relax }}{41}{figure.caption.42}
+\contentsline {figure}{\numberline {\relax 6.16}{\ignorespaces Sub-Experiment 3 - Node Addition Prioritized - Graph Similarity\relax }}{42}{figure.caption.43}
+\contentsline {figure}{\numberline {\relax 6.17}{\ignorespaces Sub-Experiment 3 - Node Addition Prioritized - Taken Costs\relax }}{43}{figure.caption.44}
+\contentsline {figure}{\numberline {\relax 6.18}{\ignorespaces Sub-Experiment 3 - Node Addition Prioritized - Replacement Costs\relax }}{44}{figure.caption.45}
+\contentsline {figure}{\numberline {\relax 6.19}{\ignorespaces Sub-Experiment 1 - Original Model\relax }}{45}{figure.caption.47}
+\contentsline {figure}{\numberline {\relax 6.20}{\ignorespaces Sub-Experiment 1 - 54\% of original mode learned\relax }}{45}{figure.caption.48}
+\contentsline {figure}{\numberline {\relax 6.21}{\ignorespaces Sub-Experiment 1 - 70\% of original mode learned\relax }}{46}{figure.caption.49}
+\contentsline {figure}{\numberline {\relax 6.22}{\ignorespaces Sub-Experiment 2 - Branched Model\relax }}{49}{figure.caption.55}
+\contentsline {figure}{\numberline {\relax 6.23}{\ignorespaces Sub-Experiment 2 - Sequential Model\relax }}{50}{figure.caption.56}
+\addvspace {10\p@ }

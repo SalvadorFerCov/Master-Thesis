@@ -1,0 +1,23 @@
+Learning probabilistic timed automata was possible by measuring observations incrementally, with the use of Euclidean distances and cost functions. 
+%
+As demonstrated in the experiments, we can find some optimal combinations for which the incremental learning approach works properly.
+% 
+Unfortunately, the implementation and concept of this approach is not able to detect optimal combinations on the fly. 
+%
+Nevertheless, it would be possible to also adapt parameters of the cost function and the similarity threshold incrementally, as we also measure graph similarity simultaneously. 
+%
+Another remark to take into consideration, is that our approach is able to detect noisy observations. The only disadvantage is that it is impossible to track whether noisy observations truly come from a trace of an automaton, or if the implementation did not receive enough information from the model to learn appropriately, as there is no interaction with the observed automaton like in active learning. Meaning that we do not allow to check properties of the model and are not able to verify which type of traces the observed model is able to emit. 
+%
+Disregarding the lack of communication with the model to be learned and assuming that it provides accurate observations. We can recreate precise models by analyzing and measuring observations in an incremental fashion. Unfortunately, further experiments must be done to prove that we can extend this approach to more complex types of timed automata, like probabilistic timed automata with cyclic behaviors. \\\\
+%
+One of the future concepts that can be applied to extend this approach is \textit{automata minimization}. An automaton is minimal, when there is no other automaton that accepts the same language with less locations. Working with a fixed number of locations would ensure having a canonical representation of automata, thus reducing complexity and ambiguities while learning and matching models.
+%
+The incremental learning approach developed only considers the modification of a single close node based on an observation, a cost functions and a similarity threshold. 
+%
+We could extend the concept of incremental learning to create graph reduction routines which would mainly consist of evaluating the cost of eliminating nodes by merging their functionality and time constraints with other similar nodes based on how close they are (e.g. By using different similarity threshold values). 
+%
+As we have seen, replacement of nodes involves the possible propagation of errors. Being that said, we would need to consider two main types of graph reduction routines: \textit{sequential merge} and \textit{parallel merge}.
+%
+A sequential merge would be done by merging sequential nodes. Specifically, pairs of nodes that do not belong to the same \textit{depth} of the graph, or when one node is \textit{parent} of the other. Whereas in parallel merge, the merge of nodes would be in the same depth of the graph, meaning that nodes might not be directly connected, consequently causing different propagation effects as in a sequential merge. 
+%
+The way that this approach would work, is by performing the reduction routines whenever there exists more locations in the learned model than in the original one. As we can already identify noisy observations and refer to the number of nodes of the original model, this extension is feasible and applicable to the implementation of this project. \\ \\ 

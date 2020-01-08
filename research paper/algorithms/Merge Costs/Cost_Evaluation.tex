@@ -1,0 +1,59 @@
+	\documentclass{article}
+	\usepackage{amsmath}
+	\usepackage{algorithm}
+	\usepackage{algpseudocode}  
+	\newcommand{\vars}{\texttt}
+	\newcommand{\func}{\textrm}
+	\algnewcommand\algorithmicforeach{\textbf{for each}}
+	\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+	
+	\begin{document}
+	\begin{algorithm}
+		\caption{Cost Evaluation. 
+		\newline Input: Addition fee \textit{additionFee}, time step fee \textit{timeFee}, error propagation fee \textit{propagationFee}}
+		\label{costEvaluation}
+		\begin{algorithmic}[1]
+			\Procedure{cost\_evaluation}{closeNode, equation}
+				\State $costs \gets \emptyset$
+				\State $costs.replacement \gets \func{evaluateReplacement(\vars{closeNode, equation})}$
+				\State $costs.addition \gets \func{evaluateAddition(\vars{closeNode, equation})}$
+				\State $costs.merge \gets \func{evaluateMerge(\vars{closeNode, equation})}$
+				\State $costs.preMerge \gets \func{evaluate\_preMerge(\vars{closeNode, equation})}$
+			    \State $costs.postMerge \gets \func{evaluate\_postMerge(\vars{closeNode, equation})}$
+			    \State $lowestCost \gets costs.getLowestCost()$
+				
+				\State \Return $lowestCost$
+				
+			\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}
+
+	\begin{algorithm}
+	\caption{Evaluate Change. 
+	\newline Input: \textit{changedEquation} represents the new fitted function from the combination of the previous fitted function values and its timeSteps.}
+	\label{evaluateChange}
+	\begin{algorithmic}[1]
+		\Procedure{evaluate\_Change}{closeNode, changedEquation}
+		\State $nodes \gets \func{getRelatedNodesFromHistory(\vars{closeNode})}$
+		\State $timeSteps\gets changedEquation.timeSteps$
+		\State $improvements\gets \emptyset$
+		\ForEach {$node \in nodes$}
+			\State $nodeEquation \gets node.getEquation()$
+			\State $nodePoints \gets nodeEquation.evaluatePoints(timeSteps)$
+			\State $currentSimilarNode \gets node.getSimilarNode()$
+			\State $currentDistance \gets node.getDistance()$
+			\State $changedPoints \gets changedEquation.evaluatePoints(timeSteps)$
+			\State $newDistance \gets \func{getEuclideanDistance(\vars{observedPoints, changedPoints})}$
+			\State $improvement\gets newDistance-currentDistance$
+			\State $changes \gets \func{storeChanges(\vars{currentSimilarNode,changedEquation, newDistance})}$
+			\State $improvements\gets improvements+improvement$
+		\EndFor
+		
+		\Return \{changes : changes, improvements : improvements\}
+		
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
+\end{document} 
+

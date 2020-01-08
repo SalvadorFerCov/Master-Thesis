@@ -1,0 +1,178 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}  
+\newcommand{\vars}{\texttt}
+\newcommand{\func}{\textrm}
+	
+\begin{document}
+		
+	\begin{algorithm}
+		\caption{Depth-First-Search}
+		\label{depthFirstSearch}
+		\begin{algorithmic}[1]
+			\Procedure{depth-first-search}{model}
+			\State $nodes \gets model.getNodes()$
+			\State $adjacencyMatrix \gets \emptyset$
+			\State $visitedNodes \gets \emptyset$
+			\State $minimizedModel \gets \emptyset$
+%			\State $recursiveStack \gets \emptyset$
+			\For{$i\gets 0, nodes.Size()$}
+				\State $node \gets nodes[i]$
+				\State $depthFirstSearch(node, visitedNodes)$
+			\EndFor
+			\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}
+
+	\begin{algorithm}
+	\caption{Depth-First-Search-Util}
+	\label{depthFirstSearchUtil}
+	\begin{algorithmic}[1]
+		\Procedure{depth-first-search-util}{vertex, visitedNodes}
+		\If{$(!visitedNodes[vertex])$}
+			\State $visitedNodes[vertex] \gets true$
+			\State $neighbors \gets vertex.getOutgoingEdges()$
+			\State $createMetrics(vertex, neighbors)$
+			\For{$i\gets 0, neighbors.Size()$}
+				\State $neighbor \gets neighbors[i]$
+				\State $depthFirstSearch(neighbor, visitedNodes)$
+			\EndFor
+		\EndIf
+		\EndProcedure
+	\end{algorithmic}
+	\end{algorithm}
+
+% Th model is considered to be minimal
+	\begin{algorithm}
+	\caption{Create-Metrics}
+	\label{createMetrics}
+	\begin{algorithmic}[1]
+		\Procedure{Create-Metrics}{vertex, neighbors}
+			\State $createStructureMetric(vertex, neighbors)$
+			\State $createEquationMetric(vertex, neighbors)$
+			\State $createActivityMetric(vertex, neighbors)$
+			\State $createTimeConstraintMetric(vertex, neighbors)$
+			\State $createPropagationMetric(vertex, neighbors)$
+			\State $createGraphEditDistance(vertex, neighbors)$
+		\EndProcedure
+	\end{algorithmic}
+	\end{algorithm}	
+
+	\begin{algorithm}
+	\caption{Create-Structure-Metric}
+	\label{createStructureMetric}
+	\begin{algorithmic}[1]
+		\Procedure{Create-Structure-Metric}{vertex, neighbors}
+			\State $vertexLabel \gets vertex.getLabel()$
+			\State $neighborLabels \gets neighbors.getLabel()$
+			\State $createAdjacencyMatrix(vertexLabel, neighborLabels)$
+		\EndProcedure
+	\end{algorithmic}
+	\end{algorithm}
+
+	\begin{algorithm}
+		\caption{Create-Equation-Metric}
+		\label{createEquationMetric}
+		\begin{algorithmic}[1]
+			\Procedure{Create-Equation-Metric}{vertex, neighbors}
+			\State $vertexEquation \gets vertex.getEquation()$
+			\State $neighborEquations \gets neighbors.getEquations()$
+			\State $createEquationMatrix(vertexEquation, neighborEquations)$
+			\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}
+
+	\begin{algorithm}
+	\caption{Create-Activity-Metric}
+	\label{createActivityMetric}
+	\begin{algorithmic}[1]
+		\Procedure{Create-Activity-Metric}{vertex, neighbors}
+		\State $vertexActiveTime \gets vertex.getEquation.getDuration()$
+		\State $neighborActiveTimes \gets neighbors.getEquations().getDurations()$
+		\State $createActivityMatrix(vertexActiveTime, neighborActiveTimes)$
+		\EndProcedure
+	\end{algorithmic}
+	\end{algorithm}
+
+	\begin{algorithm}
+	\caption{Create-Time-Constraint-Metric}
+	\label{createTimeConstraintMetric}
+	\begin{algorithmic}[1]
+		\Procedure{Create-Time-Constraint-Metric}{vertex, neighbors}
+		\State $vertexConstraint \gets vertex.getEquation.getGuards()$
+		\State $neighborConstraints \gets neighbors.getEquations().getGuards()$
+		\State $createTimeConstraintMatrix(vertexConstraint, neighborConstraints)$
+		\EndProcedure
+	\end{algorithmic}
+	\end{algorithm}
+
+%	\begin{algorithm}
+%	\caption{Minimize-Model}
+%	\label{minimizeModel}
+%	\begin{algorithmic}[1]
+%		\Procedure{Minimize-Model}{vertex, visitedNodes}
+%		\EndProcedure
+%	\end{algorithmic}
+%	\end{algorithm}
+
+	\begin{algorithm}
+	\caption{Trace-Analyzer}
+	\label{traceAnalyzer}
+	\begin{algorithmic}[1]
+		\Procedure{analyze-trace}{traceArray}
+		\For{$i\gets 0, traceArray.Size()$}
+		\State $trace\gets traceArray[i]$
+		\For{$j\gets 0, trace.Size()$}
+		\State $traceData\gets trace[j]$
+		\If{$ traceData.isNumeric() $}
+		
+		\State $\vars{buffer} \gets \func{bufferInit}(\vars{timeStep, bufferSize, traceData})$
+		
+		\State $\vars{equationTrace} \gets \func{fitData} (\vars{timeStep, buffer, traceData})$
+		
+		\State $incrementalConstruction(\vars{equationTrace});$
+		\EndIf						
+		\EndFor
+		\EndFor
+		\EndProcedure
+	\end{algorithmic}
+	\end{algorithm}
+
+	\begin{algorithm}
+	\caption{Procedure Incremental-Construction. Variable recreatedModel is initialized as empty. Prefix OM resembles the original model, while RM the recreated model. }
+	\label{traceincrementalConstruction}
+	\begin{algorithmic}[1]
+		\Procedure{Incremental-Construction}{equationTrace}
+		\For{$i\gets 0, equationTrace.Size()$}
+			\State $equation \gets equationTrace[i]$
+			\State $recreatedModel.addEquation(equation)$
+			\State $calculateStructureMetric(equation, structure\_OM, structure\_RM)$
+			\State $calculateEquationMetric(equation, functionality\_OM, functionality\_RM)$
+			\State $calculateActivityMetric(equation, activity\_OM, activity\_RM)$
+			\State $calculateTimeConstraintMetric(equation, timeConstraint\_OM, timeConstraint\_RM)$
+		\EndFor
+		
+		\State $calculateGraphEditDistance(traceMetricsArray)$
+		\State $calculatePropagationMetric()$
+				
+		\EndProcedure
+	\end{algorithmic}
+	\end{algorithm}
+
+	\begin{algorithm}
+	\caption{Calculate-Structure-Metric}
+	\label{calculateStructureMetric}
+	\begin{algorithmic}[1]
+		\Procedure{Calculate-Structure-Metric}{equation}
+			\State $equationLabel \gets equation.getLabel()$
+			\State $findOriginalStructure(equationLabel)$
+			\State $calculateIncrementalScore(equationLabel)$
+			\State $updateRecreatedStructure(equationLabel)$
+		\EndProcedure
+	\end{algorithmic}
+	\end{algorithm}
+
+
+\end{document} 
+

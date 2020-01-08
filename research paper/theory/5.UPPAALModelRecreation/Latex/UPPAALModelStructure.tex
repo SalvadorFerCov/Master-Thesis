@@ -1,0 +1,110 @@
+%TITLE: UPPAAL Probabilistic model representation/scheme/design
+We can now state that a set of
+equations describe the behavior of a set of traces. 
+%
+A behavior is referred as the functionality of a location from a timed automaton, which is triggered by the execution of an edge at a certain time of a simulation. 
+%
+%Due to the fact that a timed automaton can be represented as a model. 
+%
+This chapter will explain how a set of equations can be
+assembled in order to represent a probabilistic model scheme in UPPAAL.  
+
+%\section{Model}
+%A model is a structure that will contain all of the templates or processes
+%A model is a set of processes that define the functionality of a system.
+%%
+%Each process is created based on the results of the analysis made to every trace. 
+
+\section{Templates}
+It is the instance of a process in UPPAAL that represents a timed automaton as a model, and that resembles the functionality of a system.
+%
+Given that an $Equation$ object has a function on its $data$ field that describes the behavior of a variable, a template is created for every different variable that is identified in each stack of equations. 
+%
+%For example in Fig.(x), there will only exist 1 template for variable $x$ in the final model. 
+%
+%This last one, will represent the functionality of a variable, that represents a process of a model. 
+
+\section{Locations}
+It is the representation of the state of a model or system, which is capable of executing a functionality. 
+%
+Such functionality is the reference of the stored expression in the $data$ field of an equation object.
+%
+Every location created in a model is based on a fitted equation that was stored in the stack of an analysis. 
+%
+%For example, the location $L$ from Fig.(x) was created based on EQ1 that executes the following function:
+%$x = 0 - 2.0*pow(tg,1), ti=0$. Meaning that the functionality of $L$ is to decrement variable $x$ by two units and to reset the value of clock $ti$. 
+
+\section{Time in UPPAAL}
+Taking into account that a clock variable in UPPAAL represents the time units of the simulation of a model.
+%
+Two clocks are used in each created model to synchronize the functionalities of every location from each template.
+%
+One clock with the name of $tg$ is declared globally for every constructed model. 
+%
+It references the time that passes by in a simulation and it is referable from any declared template. 
+%
+A second clock is declared locally in each template with the name of $ti$, which is only visible in the template that it was declared.
+%
+It helps to coordinate the actions of the edges from a location. 
+
+\subsection{Guards}
+A guard is used in this implementation to synchronize the actions of every location. 
+%
+It ensures that a functionality in a location is executed only after 1 time unit has passed in the simulation, without surpassing the time given by the $endTime$ of the equation that the location resembles. 
+
+\subsection{Invariants}
+An invariant is used in this implementation to represents the time units that a location is active in a simulation.
+%
+It ensures that a location performs its functionality once 1 time unit passes by in a simulation and only until $tg$ reaches the $endTime$ of the location. 
+%
+A location is forced to take an edge to another location whenever the $endTime$ is reached. 
+
+\section {Edges}
+A location in this implementation always has a self-pointing edge, in which a guard controls the time of execution of a functionality. 
+%
+%
+When an edge of a location points to another location, a guard is used in the edge to restricts the time in which the location is allowed to travel to its destination.
+%
+%The clock constraint that has to be satisfied in the previously mentioned edge is expressed as: $tg \geq endTime$.
+
+\section{Branch Points Functionality}
+The utility of branch points in this implementation is crucial for creating probabilistic models, as they coordinate the flow of the outgoing edges of a location.
+%
+They decide which edge a location should take.
+%
+Every template possesses an initial urgent location with an edge that goes to an initial branch point.
+%
+This allows to treat a template as a fully connected graph, where a location is a node that can be attached or detached from any position of the graph. 
+\newpage
+\section{Probabilistic Scheme Example}
+%Let us now visualize the next set of equations obtained from an analysis:
+\begin{figure}[h]
+	\centering
+	\caption{Example of the representation of data from traces as equations}
+	%	\label{fig:practical-example}
+	\includegraphics[scale=0.8]{./pictures/equationTracePatch.PNG}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\caption{Example of the structure of the models to be recreated}
+	%	\label{fig:practical-example}
+	\includegraphics[scale=0.8]{./pictures/UppaalStructureExample.PNG}
+\end{figure}
+
+Every trace contains a stack of fitted equations, which resemble the behavior of a variable from a simulation.
+%
+$T0$ and $T1$ have the same behavior, described by function $EQ1$ that is active from time 0.0 to 300.0, and $EQ2$ that is active from time 300.0 - 301.0.
+%
+If we take a look at location $L0$, it is only active until time unit 300 of the simulation (referenced by $tg$) is reached.
+%
+Its functionality is based on $EQ1$, which decrements the value of $x$ by 2 and reset the value of $ti$.
+%
+This functionality is controlled by the clock constraints of $ti$ and $tg$, which only allows a location to perform its functionality once 1 time unit passes by in the simulation, until it reaches is upper bound time limit (referenced by $tg$).
+%
+Every equation from a trace is transformed to a location and attached to the model starting from the first location named $Start$, until the last one called $End$. 
+%
+This representation formalizes the design of the scheme of our probabilistic model. 
+%
+The implementation of the integration of edges between locations is explained in \chapref*{UPPAAL Probabilistic Model Implementation}. 
+

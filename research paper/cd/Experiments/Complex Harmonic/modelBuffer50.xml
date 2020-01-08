@@ -1,0 +1,2981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>clock tg = 0.0;</declaration>
+	<template>
+		<name>T_x</name>
+		<declaration>double x = 0.0; clock ti=0.0; clock tloc=0.0;</declaration>
+		<location id="id0" x="48000" y="0">
+			<name x="48000" y="25">L160</name>
+			<label kind="invariant" x="48000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2062</label>
+		</location>
+		<location id="id1" x="17400" y="0">
+			<name x="17400" y="25">L58</name>
+			<label kind="invariant" x="17400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=811</label>
+		</location>
+		<location id="id2" x="16800" y="0">
+			<name x="16800" y="25">L56</name>
+			<label kind="invariant" x="16800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=763</label>
+		</location>
+		<location id="id3" x="47400" y="0">
+			<name x="47400" y="25">L158</name>
+			<label kind="invariant" x="47400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2060</label>
+		</location>
+		<location id="id4" x="16200" y="0">
+			<name x="16200" y="25">L54</name>
+			<label kind="invariant" x="16200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=761</label>
+		</location>
+		<location id="id5" x="15600" y="0">
+			<name x="15600" y="25">L52</name>
+			<label kind="invariant" x="15600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=713</label>
+		</location>
+		<location id="id6" x="46200" y="0">
+			<name x="46200" y="25">L154</name>
+			<label kind="invariant" x="46200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2010</label>
+		</location>
+		<location id="id7" x="15000" y="0">
+			<name x="15000" y="25">L50</name>
+			<label kind="invariant" x="15000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=711</label>
+		</location>
+		<location id="id8" x="46800" y="0">
+			<name x="46800" y="25">L156</name>
+			<label kind="invariant" x="46800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2012</label>
+		</location>
+		<location id="id9" x="45000" y="0">
+			<name x="45000" y="25">L150</name>
+			<label kind="invariant" x="45000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1960</label>
+		</location>
+		<location id="id10" x="45600" y="0">
+			<name x="45600" y="25">L152</name>
+			<label kind="invariant" x="45600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1962</label>
+		</location>
+		<location id="id11" x="51000" y="0">
+			<name x="51000" y="25">L170</name>
+			<label kind="invariant" x="51000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2210</label>
+		</location>
+		<location id="id12" x="14400" y="0">
+			<name x="14400" y="25">L48</name>
+			<label kind="invariant" x="14400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=663</label>
+		</location>
+		<location id="id13" x="61800" y="0">
+			<name x="61800" y="25">L206</name>
+			<label kind="invariant" x="61800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2660</label>
+		</location>
+		<location id="id14" x="13800" y="0">
+			<name x="13800" y="25">L46</name>
+			<label kind="invariant" x="13800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=661</label>
+		</location>
+		<location id="id15" x="62400" y="0">
+			<name x="62400" y="25">L208</name>
+			<label kind="invariant" x="62400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2662</label>
+		</location>
+		<location id="id16" x="13200" y="0">
+			<name x="13200" y="25">L44</name>
+			<label kind="invariant" x="13200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=613</label>
+		</location>
+		<location id="id17" x="60600" y="0">
+			<name x="60600" y="25">L202</name>
+			<label kind="invariant" x="60600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2610</label>
+		</location>
+		<location id="id18" x="12600" y="0">
+			<name x="12600" y="25">L42</name>
+			<label kind="invariant" x="12600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=611</label>
+		</location>
+		<location id="id19" x="61200" y="0">
+			<name x="61200" y="25">L204</name>
+			<label kind="invariant" x="61200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2612</label>
+		</location>
+		<location id="id20" x="12000" y="0">
+			<name x="12000" y="25">L40</name>
+			<label kind="invariant" x="12000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=563</label>
+		</location>
+		<location id="id21" x="49800" y="0">
+			<name x="49800" y="25">L166</name>
+			<label kind="invariant" x="49800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2160</label>
+		</location>
+		<location id="id22" x="60000" y="0">
+			<name x="60000" y="25">L200</name>
+			<label kind="invariant" x="60000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2562</label>
+		</location>
+		<location id="id23" x="50400" y="0">
+			<name x="50400" y="25">L168</name>
+			<label kind="invariant" x="50400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2162</label>
+		</location>
+		<location id="id24" x="48600" y="0">
+			<name x="48600" y="25">L162</name>
+			<label kind="invariant" x="48600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2110</label>
+		</location>
+		<location id="id25" x="49200" y="0">
+			<name x="49200" y="25">L164</name>
+			<label kind="invariant" x="49200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2112</label>
+		</location>
+		<location id="id26" x="70800" y="150">
+			<name x="70800" y="175">End</name>
+		</location>
+		<location id="id27" x="11400" y="0">
+			<name x="11400" y="25">L38</name>
+			<label kind="invariant" x="11400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=561</label>
+		</location>
+		<location id="id28" x="10800" y="0">
+			<name x="10800" y="25">L36</name>
+			<label kind="invariant" x="10800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=513</label>
+		</location>
+		<location id="id29" x="10200" y="0">
+			<name x="10200" y="25">L34</name>
+			<label kind="invariant" x="10200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=511</label>
+		</location>
+		<location id="id30" x="40800" y="0">
+			<name x="40800" y="25">L136</name>
+			<label kind="invariant" x="40800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1763</label>
+		</location>
+		<location id="id31" x="9600" y="0">
+			<name x="9600" y="25">L32</name>
+			<label kind="invariant" x="9600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=463</label>
+		</location>
+		<location id="id32" x="41400" y="0">
+			<name x="41400" y="25">L138</name>
+			<label kind="invariant" x="41400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1811</label>
+		</location>
+		<location id="id33" x="9000" y="0">
+			<name x="9000" y="25">L30</name>
+			<label kind="invariant" x="9000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=461</label>
+		</location>
+		<location id="id34" x="39600" y="0">
+			<name x="39600" y="25">L132</name>
+			<label kind="invariant" x="39600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1713</label>
+		</location>
+		<location id="id35" x="40200" y="0">
+			<name x="40200" y="25">L134</name>
+			<label kind="invariant" x="40200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1761</label>
+		</location>
+		<location id="id36" x="39000" y="0">
+			<name x="39000" y="25">L130</name>
+			<label kind="invariant" x="39000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1711</label>
+		</location>
+		<location id="id37" x="8400" y="0">
+			<name x="8400" y="25">L28</name>
+			<label kind="invariant" x="8400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=413</label>
+		</location>
+		<location id="id38" x="7800" y="0">
+			<name x="7800" y="25">L26</name>
+			<label kind="invariant" x="7800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=411</label>
+		</location>
+		<location id="id39" x="7200" y="0">
+			<name x="7200" y="25">L24</name>
+			<label kind="invariant" x="7200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=363</label>
+		</location>
+		<location id="id40" x="6600" y="0">
+			<name x="6600" y="25">L22</name>
+			<label kind="invariant" x="6600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=361</label>
+		</location>
+		<location id="id41" x="6000" y="0">
+			<name x="6000" y="25">L20</name>
+			<label kind="invariant" x="6000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=313</label>
+		</location>
+		<location id="id42" x="44400" y="0">
+			<name x="44400" y="25">L148</name>
+			<label kind="invariant" x="44400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1912</label>
+		</location>
+		<location id="id43" x="43200" y="0">
+			<name x="43200" y="25">L144</name>
+			<label kind="invariant" x="43200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1862</label>
+		</location>
+		<location id="id44" x="-400" y="0">
+			<name x="-400" y="25">Start</name>
+			<urgent/>
+		</location>
+		<location id="id45" x="43800" y="0">
+			<name x="43800" y="25">L146</name>
+			<label kind="invariant" x="43800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1910</label>
+		</location>
+		<location id="id46" x="42000" y="0">
+			<name x="42000" y="25">L140</name>
+			<label kind="invariant" x="42000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1812</label>
+		</location>
+		<location id="id47" x="42600" y="0">
+			<name x="42600" y="25">L142</name>
+			<label kind="invariant" x="42600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1860</label>
+		</location>
+		<location id="id48" x="5400" y="0">
+			<name x="5400" y="25">L18</name>
+			<label kind="invariant" x="5400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=311</label>
+		</location>
+		<location id="id49" x="4800" y="0">
+			<name x="4800" y="25">L16</name>
+			<label kind="invariant" x="4800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=263</label>
+		</location>
+		<location id="id50" x="35400" y="0">
+			<name x="35400" y="25">L118</name>
+			<label kind="invariant" x="35400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1561</label>
+		</location>
+		<location id="id51" x="4200" y="0">
+			<name x="4200" y="25">L14</name>
+			<label kind="invariant" x="4200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=261</label>
+		</location>
+		<location id="id52" x="3600" y="0">
+			<name x="3600" y="25">L12</name>
+			<label kind="invariant" x="3600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=213</label>
+		</location>
+		<location id="id53" x="2400" y="0">
+			<name x="2400" y="25">L8</name>
+			<label kind="invariant" x="2400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=162</label>
+		</location>
+		<location id="id54" x="34200" y="0">
+			<name x="34200" y="25">L114</name>
+			<label kind="invariant" x="34200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1511</label>
+		</location>
+		<location id="id55" x="29400" y="0">
+			<name x="29400" y="25">L98</name>
+			<label kind="invariant" x="29400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1311</label>
+		</location>
+		<location id="id56" x="3000" y="0">
+			<name x="3000" y="25">L10</name>
+			<label kind="invariant" x="3000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=210</label>
+		</location>
+		<location id="id57" x="1800" y="0">
+			<name x="1800" y="25">L6</name>
+			<label kind="invariant" x="1800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=160</label>
+		</location>
+		<location id="id58" x="34800" y="0">
+			<name x="34800" y="25">L116</name>
+			<label kind="invariant" x="34800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1513</label>
+		</location>
+		<location id="id59" x="28800" y="0">
+			<name x="28800" y="25">L96</name>
+			<label kind="invariant" x="28800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1263</label>
+		</location>
+		<location id="id60" x="1200" y="0">
+			<name x="1200" y="25">L4</name>
+			<label kind="invariant" x="1200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=112</label>
+		</location>
+		<location id="id61" x="59400" y="0">
+			<name x="59400" y="25">L198</name>
+			<label kind="invariant" x="59400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2560</label>
+		</location>
+		<location id="id62" x="33000" y="0">
+			<name x="33000" y="25">L110</name>
+			<label kind="invariant" x="33000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1461</label>
+		</location>
+		<location id="id63" x="69600" y="0">
+			<name x="69600" y="25">L232</name>
+			<label kind="invariant" x="69600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2962</label>
+		</location>
+		<location id="id64" x="28200" y="0">
+			<name x="28200" y="25">L94</name>
+			<label kind="invariant" x="28200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1261</label>
+		</location>
+		<location id="id65" x="600" y="0">
+			<name x="600" y="25">L2</name>
+			<label kind="invariant" x="600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=110</label>
+		</location>
+		<location id="id66" x="33600" y="0">
+			<name x="33600" y="25">L112</name>
+			<label kind="invariant" x="33600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1463</label>
+		</location>
+		<location id="id67" x="70200" y="0">
+			<name x="70200" y="25">L234</name>
+			<label kind="invariant" x="70200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2999</label>
+		</location>
+		<location id="id68" x="27600" y="0">
+			<name x="27600" y="25">L92</name>
+			<label kind="invariant" x="27600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1213</label>
+		</location>
+		<location id="id69" x="0" y="0">
+			<name x="0" y="25">L0</name>
+			<label kind="invariant" x="0" y="10">ti&lt;=1 &amp;&amp; tg&lt;=62</label>
+		</location>
+		<location id="id70" x="58200" y="0">
+			<name x="58200" y="25">L194</name>
+			<label kind="invariant" x="58200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2510</label>
+		</location>
+		<location id="id71" x="27000" y="0">
+			<name x="27000" y="25">L90</name>
+			<label kind="invariant" x="27000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1211</label>
+		</location>
+		<location id="id72" x="58800" y="0">
+			<name x="58800" y="25">L196</name>
+			<label kind="invariant" x="58800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2512</label>
+		</location>
+		<location id="id73" x="69000" y="0">
+			<name x="69000" y="25">L230</name>
+			<label kind="invariant" x="69000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2960</label>
+		</location>
+		<location id="id74" x="26400" y="0">
+			<name x="26400" y="25">L88</name>
+			<label kind="invariant" x="26400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1163</label>
+		</location>
+		<location id="id75" x="25800" y="0">
+			<name x="25800" y="25">L86</name>
+			<label kind="invariant" x="25800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1161</label>
+		</location>
+		<location id="id76" x="37800" y="0">
+			<name x="37800" y="25">L126</name>
+			<label kind="invariant" x="37800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1661</label>
+		</location>
+		<location id="id77" x="25200" y="0">
+			<name x="25200" y="25">L84</name>
+			<label kind="invariant" x="25200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1113</label>
+		</location>
+		<location id="id78" x="38400" y="0">
+			<name x="38400" y="25">L128</name>
+			<label kind="invariant" x="38400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1663</label>
+		</location>
+		<location id="id79" x="24600" y="0">
+			<name x="24600" y="25">L82</name>
+			<label kind="invariant" x="24600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1111</label>
+		</location>
+		<location id="id80" x="36600" y="0">
+			<name x="36600" y="25">L122</name>
+			<label kind="invariant" x="36600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1611</label>
+		</location>
+		<location id="id81" x="24000" y="0">
+			<name x="24000" y="25">L80</name>
+			<label kind="invariant" x="24000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1063</label>
+		</location>
+		<location id="id82" x="37200" y="0">
+			<name x="37200" y="25">L124</name>
+			<label kind="invariant" x="37200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1613</label>
+		</location>
+		<location id="id83" x="36000" y="0">
+			<name x="36000" y="25">L120</name>
+			<label kind="invariant" x="36000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1563</label>
+		</location>
+		<location id="id84" x="54000" y="0">
+			<name x="54000" y="25">L180</name>
+			<label kind="invariant" x="54000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2312</label>
+		</location>
+		<location id="id85" x="54600" y="0">
+			<name x="54600" y="25">L182</name>
+			<label kind="invariant" x="54600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2360</label>
+		</location>
+		<location id="id86" x="65400" y="0">
+			<name x="65400" y="25">L218</name>
+			<label kind="invariant" x="65400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2810</label>
+		</location>
+		<location id="id87" x="23400" y="0">
+			<name x="23400" y="25">L78</name>
+			<label kind="invariant" x="23400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1061</label>
+		</location>
+		<location id="id88" x="64200" y="0">
+			<name x="64200" y="25">L214</name>
+			<label kind="invariant" x="64200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2760</label>
+		</location>
+		<location id="id89" x="22800" y="0">
+			<name x="22800" y="25">L76</name>
+			<label kind="invariant" x="22800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1013</label>
+		</location>
+		<location id="id90" x="64800" y="0">
+			<name x="64800" y="25">L216</name>
+			<label kind="invariant" x="64800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2762</label>
+		</location>
+		<location id="id91" x="22200" y="0">
+			<name x="22200" y="25">L74</name>
+			<label kind="invariant" x="22200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1011</label>
+		</location>
+		<location id="id92" x="52800" y="0">
+			<name x="52800" y="25">L176</name>
+			<label kind="invariant" x="52800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2262</label>
+		</location>
+		<location id="id93" x="63000" y="0">
+			<name x="63000" y="25">L210</name>
+			<label kind="invariant" x="63000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2710</label>
+		</location>
+		<location id="id94" x="21600" y="0">
+			<name x="21600" y="25">L72</name>
+			<label kind="invariant" x="21600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=963</label>
+		</location>
+		<location id="id95" x="53400" y="0">
+			<name x="53400" y="25">L178</name>
+			<label kind="invariant" x="53400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2310</label>
+		</location>
+		<location id="id96" x="63600" y="0">
+			<name x="63600" y="25">L212</name>
+			<label kind="invariant" x="63600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2712</label>
+		</location>
+		<location id="id97" x="21000" y="0">
+			<name x="21000" y="25">L70</name>
+			<label kind="invariant" x="21000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=961</label>
+		</location>
+		<location id="id98" x="51600" y="0">
+			<name x="51600" y="25">L172</name>
+			<label kind="invariant" x="51600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2212</label>
+		</location>
+		<location id="id99" x="52200" y="0">
+			<name x="52200" y="25">L174</name>
+			<label kind="invariant" x="52200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2260</label>
+		</location>
+		<location id="id100" x="57000" y="0">
+			<name x="57000" y="25">L190</name>
+			<label kind="invariant" x="57000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2460</label>
+		</location>
+		<location id="id101" x="57600" y="0">
+			<name x="57600" y="25">L192</name>
+			<label kind="invariant" x="57600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2462</label>
+		</location>
+		<location id="id102" x="68400" y="0">
+			<name x="68400" y="25">L228</name>
+			<label kind="invariant" x="68400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2912</label>
+		</location>
+		<location id="id103" x="20400" y="0">
+			<name x="20400" y="25">L68</name>
+			<label kind="invariant" x="20400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=913</label>
+		</location>
+		<location id="id104" x="32400" y="0">
+			<name x="32400" y="25">L108</name>
+			<label kind="invariant" x="32400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1413</label>
+		</location>
+		<location id="id105" x="19800" y="0">
+			<name x="19800" y="25">L66</name>
+			<label kind="invariant" x="19800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=911</label>
+		</location>
+		<location id="id106" x="67200" y="0">
+			<name x="67200" y="25">L224</name>
+			<label kind="invariant" x="67200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2862</label>
+		</location>
+		<location id="id107" x="19200" y="0">
+			<name x="19200" y="25">L64</name>
+			<label kind="invariant" x="19200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=863</label>
+		</location>
+		<location id="id108" x="31200" y="0">
+			<name x="31200" y="25">L104</name>
+			<label kind="invariant" x="31200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1363</label>
+		</location>
+		<location id="id109" x="67800" y="0">
+			<name x="67800" y="25">L226</name>
+			<label kind="invariant" x="67800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2910</label>
+		</location>
+		<location id="id110" x="18600" y="0">
+			<name x="18600" y="25">L62</name>
+			<label kind="invariant" x="18600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=861</label>
+		</location>
+		<location id="id111" x="31800" y="0">
+			<name x="31800" y="25">L106</name>
+			<label kind="invariant" x="31800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1411</label>
+		</location>
+		<location id="id112" x="66000" y="0">
+			<name x="66000" y="25">L220</name>
+			<label kind="invariant" x="66000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2812</label>
+		</location>
+		<location id="id113" x="18000" y="0">
+			<name x="18000" y="25">L60</name>
+			<label kind="invariant" x="18000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=813</label>
+		</location>
+		<location id="id114" x="56400" y="0">
+			<name x="56400" y="25">L188</name>
+			<label kind="invariant" x="56400" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2412</label>
+		</location>
+		<location id="id115" x="30000" y="0">
+			<name x="30000" y="25">L100</name>
+			<label kind="invariant" x="30000" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1313</label>
+		</location>
+		<location id="id116" x="66600" y="0">
+			<name x="66600" y="25">L222</name>
+			<label kind="invariant" x="66600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2860</label>
+		</location>
+		<location id="id117" x="30600" y="0">
+			<name x="30600" y="25">L102</name>
+			<label kind="invariant" x="30600" y="10">ti&lt;=1 &amp;&amp; tg&lt;=1361</label>
+		</location>
+		<location id="id118" x="55200" y="0">
+			<name x="55200" y="25">L184</name>
+			<label kind="invariant" x="55200" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2362</label>
+		</location>
+		<location id="id119" x="55800" y="0">
+			<name x="55800" y="25">L186</name>
+			<label kind="invariant" x="55800" y="10">ti&lt;=1 &amp;&amp; tg&lt;=2410</label>
+		</location>
+		<branchpoint id="id120" x="54300" y="0">
+		</branchpoint>
+		<branchpoint id="id121" x="54900" y="0">
+		</branchpoint>
+		<branchpoint id="id122" x="55500" y="0">
+		</branchpoint>
+		<branchpoint id="id123" x="56100" y="0">
+		</branchpoint>
+		<branchpoint id="id124" x="56700" y="0">
+		</branchpoint>
+		<branchpoint id="id125" x="57300" y="0">
+		</branchpoint>
+		<branchpoint id="id126" x="57900" y="0">
+		</branchpoint>
+		<branchpoint id="id127" x="58500" y="0">
+		</branchpoint>
+		<branchpoint id="id128" x="59100" y="0">
+		</branchpoint>
+		<branchpoint id="id129" x="6300" y="0">
+		</branchpoint>
+		<branchpoint id="id130" x="59700" y="0">
+		</branchpoint>
+		<branchpoint id="id131" x="6900" y="0">
+		</branchpoint>
+		<branchpoint id="id132" x="7500" y="0">
+		</branchpoint>
+		<branchpoint id="id133" x="8100" y="0">
+		</branchpoint>
+		<branchpoint id="id134" x="8700" y="0">
+		</branchpoint>
+		<branchpoint id="id135" x="9300" y="0">
+		</branchpoint>
+		<branchpoint id="id136" x="9900" y="0">
+		</branchpoint>
+		<branchpoint id="id137" x="10500" y="0">
+		</branchpoint>
+		<branchpoint id="id138" x="11100" y="0">
+		</branchpoint>
+		<branchpoint id="id139" x="11700" y="0">
+		</branchpoint>
+		<branchpoint id="id140" x="48300" y="0">
+		</branchpoint>
+		<branchpoint id="id141" x="48900" y="0">
+		</branchpoint>
+		<branchpoint id="id142" x="49500" y="0">
+		</branchpoint>
+		<branchpoint id="id143" x="50100" y="0">
+		</branchpoint>
+		<branchpoint id="id144" x="50700" y="0">
+		</branchpoint>
+		<branchpoint id="id145" x="51300" y="0">
+		</branchpoint>
+		<branchpoint id="id146" x="51900" y="0">
+		</branchpoint>
+		<branchpoint id="id147" x="52500" y="0">
+		</branchpoint>
+		<branchpoint id="id148" x="53100" y="0">
+		</branchpoint>
+		<branchpoint id="id149" x="53700" y="0">
+		</branchpoint>
+		<branchpoint id="id150" x="69900" y="0">
+		</branchpoint>
+		<branchpoint id="id151" x="66300" y="0">
+		</branchpoint>
+		<branchpoint id="id152" x="66900" y="0">
+		</branchpoint>
+		<branchpoint id="id153" x="67500" y="0">
+		</branchpoint>
+		<branchpoint id="id154" x="68100" y="0">
+		</branchpoint>
+		<branchpoint id="id155" x="68700" y="0">
+		</branchpoint>
+		<branchpoint id="id156" x="69300" y="0">
+		</branchpoint>
+		<branchpoint id="id157" x="42300" y="0">
+		</branchpoint>
+		<branchpoint id="id158" x="42900" y="0">
+		</branchpoint>
+		<branchpoint id="id159" x="43500" y="0">
+		</branchpoint>
+		<branchpoint id="id160" x="44100" y="0">
+		</branchpoint>
+		<branchpoint id="id161" x="44700" y="0">
+		</branchpoint>
+		<branchpoint id="id162" x="45300" y="0">
+		</branchpoint>
+		<branchpoint id="id163" x="45900" y="0">
+		</branchpoint>
+		<branchpoint id="id164" x="46500" y="0">
+		</branchpoint>
+		<branchpoint id="id165" x="47100" y="0">
+		</branchpoint>
+		<branchpoint id="id166" x="47700" y="0">
+		</branchpoint>
+		<branchpoint id="id167" x="5100" y="0">
+		</branchpoint>
+		<branchpoint id="id168" x="5700" y="0">
+		</branchpoint>
+		<branchpoint id="id169" x="3900" y="0">
+		</branchpoint>
+		<branchpoint id="id170" x="4500" y="0">
+		</branchpoint>
+		<branchpoint id="id171" x="2700" y="0">
+		</branchpoint>
+		<branchpoint id="id172" x="3300" y="0">
+		</branchpoint>
+		<branchpoint id="id173" x="1500" y="0">
+		</branchpoint>
+		<branchpoint id="id174" x="2100" y="0">
+		</branchpoint>
+		<branchpoint id="id175" x="300" y="0">
+		</branchpoint>
+		<branchpoint id="id176" x="900" y="0">
+		</branchpoint>
+		<branchpoint id="id177" x="36300" y="0">
+		</branchpoint>
+		<branchpoint id="id178" x="36900" y="0">
+		</branchpoint>
+		<branchpoint id="id179" x="37500" y="0">
+		</branchpoint>
+		<branchpoint id="id180" x="38100" y="0">
+		</branchpoint>
+		<branchpoint id="id181" x="38700" y="0">
+		</branchpoint>
+		<branchpoint id="id182" x="39300" y="0">
+		</branchpoint>
+		<branchpoint id="id183" x="39900" y="0">
+		</branchpoint>
+		<branchpoint id="id184" x="40500" y="0">
+		</branchpoint>
+		<branchpoint id="id185" x="41100" y="0">
+		</branchpoint>
+		<branchpoint id="id186" x="41700" y="0">
+		</branchpoint>
+		<branchpoint id="id187" x="30300" y="0">
+		</branchpoint>
+		<branchpoint id="id188" x="30900" y="0">
+		</branchpoint>
+		<branchpoint id="id189" x="31500" y="0">
+		</branchpoint>
+		<branchpoint id="id190" x="32100" y="0">
+		</branchpoint>
+		<branchpoint id="id191" x="32700" y="0">
+		</branchpoint>
+		<branchpoint id="id192" x="33300" y="0">
+		</branchpoint>
+		<branchpoint id="id193" x="33900" y="0">
+		</branchpoint>
+		<branchpoint id="id194" x="34500" y="0">
+		</branchpoint>
+		<branchpoint id="id195" x="35100" y="0">
+		</branchpoint>
+		<branchpoint id="id196" x="35700" y="0">
+		</branchpoint>
+		<branchpoint id="id197" x="24300" y="0">
+		</branchpoint>
+		<branchpoint id="id198" x="24900" y="0">
+		</branchpoint>
+		<branchpoint id="id199" x="25500" y="0">
+		</branchpoint>
+		<branchpoint id="id200" x="26100" y="0">
+		</branchpoint>
+		<branchpoint id="id201" x="26700" y="0">
+		</branchpoint>
+		<branchpoint id="id202" x="27300" y="0">
+		</branchpoint>
+		<branchpoint id="id203" x="27900" y="0">
+		</branchpoint>
+		<branchpoint id="id204" x="28500" y="0">
+		</branchpoint>
+		<branchpoint id="id205" x="-200" y="0">
+		</branchpoint>
+		<branchpoint id="id206" x="29100" y="0">
+		</branchpoint>
+		<branchpoint id="id207" x="29700" y="0">
+		</branchpoint>
+		<branchpoint id="id208" x="18300" y="0">
+		</branchpoint>
+		<branchpoint id="id209" x="18900" y="0">
+		</branchpoint>
+		<branchpoint id="id210" x="19500" y="0">
+		</branchpoint>
+		<branchpoint id="id211" x="20100" y="0">
+		</branchpoint>
+		<branchpoint id="id212" x="20700" y="0">
+		</branchpoint>
+		<branchpoint id="id213" x="63300" y="0">
+		</branchpoint>
+		<branchpoint id="id214" x="21300" y="0">
+		</branchpoint>
+		<branchpoint id="id215" x="63900" y="0">
+		</branchpoint>
+		<branchpoint id="id216" x="21900" y="0">
+		</branchpoint>
+		<branchpoint id="id217" x="64500" y="0">
+		</branchpoint>
+		<branchpoint id="id218" x="22500" y="0">
+		</branchpoint>
+		<branchpoint id="id219" x="65100" y="0">
+		</branchpoint>
+		<branchpoint id="id220" x="23100" y="0">
+		</branchpoint>
+		<branchpoint id="id221" x="65700" y="0">
+		</branchpoint>
+		<branchpoint id="id222" x="23700" y="0">
+		</branchpoint>
+		<branchpoint id="id223" x="60300" y="0">
+		</branchpoint>
+		<branchpoint id="id224" x="60900" y="0">
+		</branchpoint>
+		<branchpoint id="id225" x="61500" y="0">
+		</branchpoint>
+		<branchpoint id="id226" x="62100" y="0">
+		</branchpoint>
+		<branchpoint id="id227" x="62700" y="0">
+		</branchpoint>
+		<branchpoint id="id228" x="12300" y="0">
+		</branchpoint>
+		<branchpoint id="id229" x="12900" y="0">
+		</branchpoint>
+		<branchpoint id="id230" x="13500" y="0">
+		</branchpoint>
+		<branchpoint id="id231" x="14100" y="0">
+		</branchpoint>
+		<branchpoint id="id232" x="14700" y="0">
+		</branchpoint>
+		<branchpoint id="id233" x="15300" y="0">
+		</branchpoint>
+		<branchpoint id="id234" x="15900" y="0">
+		</branchpoint>
+		<branchpoint id="id235" x="16500" y="0">
+		</branchpoint>
+		<branchpoint id="id236" x="17100" y="0">
+		</branchpoint>
+		<branchpoint id="id237" x="17700" y="0">
+		</branchpoint>
+		<init ref="id44"/>
+		<transition>
+			<source ref="id120"/>
+			<target ref="id85"/>
+			<label kind="probability" x="54596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id121"/>
+			<target ref="id118"/>
+			<label kind="probability" x="55196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id122"/>
+			<target ref="id119"/>
+			<label kind="probability" x="55796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id123"/>
+			<target ref="id114"/>
+			<label kind="probability" x="56396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id124"/>
+			<target ref="id100"/>
+			<label kind="probability" x="56996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id125"/>
+			<target ref="id101"/>
+			<label kind="probability" x="57596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id126"/>
+			<target ref="id70"/>
+			<label kind="probability" x="58196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id127"/>
+			<target ref="id72"/>
+			<label kind="probability" x="58796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id128"/>
+			<target ref="id61"/>
+			<label kind="probability" x="59396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id129"/>
+			<target ref="id40"/>
+			<label kind="probability" x="6596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id130"/>
+			<target ref="id22"/>
+			<label kind="probability" x="59996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id131"/>
+			<target ref="id39"/>
+			<label kind="probability" x="7196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id132"/>
+			<target ref="id38"/>
+			<label kind="probability" x="7796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id133"/>
+			<target ref="id37"/>
+			<label kind="probability" x="8396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id134"/>
+			<target ref="id33"/>
+			<label kind="probability" x="8996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id135"/>
+			<target ref="id31"/>
+			<label kind="probability" x="9596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id136"/>
+			<target ref="id29"/>
+			<label kind="probability" x="10196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id137"/>
+			<target ref="id28"/>
+			<label kind="probability" x="10796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id138"/>
+			<target ref="id27"/>
+			<label kind="probability" x="11396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id139"/>
+			<target ref="id20"/>
+			<label kind="probability" x="11996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id140"/>
+			<target ref="id24"/>
+			<label kind="probability" x="48596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id141"/>
+			<target ref="id25"/>
+			<label kind="probability" x="49196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id142"/>
+			<target ref="id21"/>
+			<label kind="probability" x="49796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id143"/>
+			<target ref="id23"/>
+			<label kind="probability" x="50396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id144"/>
+			<target ref="id11"/>
+			<label kind="probability" x="50996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id145"/>
+			<target ref="id98"/>
+			<label kind="probability" x="51596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id146"/>
+			<target ref="id99"/>
+			<label kind="probability" x="52196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id147"/>
+			<target ref="id92"/>
+			<label kind="probability" x="52796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id148"/>
+			<target ref="id95"/>
+			<label kind="probability" x="53396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id149"/>
+			<target ref="id84"/>
+			<label kind="probability" x="53996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id150"/>
+			<target ref="id67"/>
+			<label kind="probability" x="70196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id151"/>
+			<target ref="id116"/>
+			<label kind="probability" x="66596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id152"/>
+			<target ref="id106"/>
+			<label kind="probability" x="67196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id153"/>
+			<target ref="id109"/>
+			<label kind="probability" x="67796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id154"/>
+			<target ref="id102"/>
+			<label kind="probability" x="68396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id155"/>
+			<target ref="id73"/>
+			<label kind="probability" x="68996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id156"/>
+			<target ref="id63"/>
+			<label kind="probability" x="69596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id157"/>
+			<target ref="id47"/>
+			<label kind="probability" x="42596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id158"/>
+			<target ref="id43"/>
+			<label kind="probability" x="43196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id159"/>
+			<target ref="id45"/>
+			<label kind="probability" x="43796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id160"/>
+			<target ref="id42"/>
+			<label kind="probability" x="44396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id161"/>
+			<target ref="id9"/>
+			<label kind="probability" x="44996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id162"/>
+			<target ref="id10"/>
+			<label kind="probability" x="45596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id163"/>
+			<target ref="id6"/>
+			<label kind="probability" x="46196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id164"/>
+			<target ref="id8"/>
+			<label kind="probability" x="46796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id165"/>
+			<target ref="id3"/>
+			<label kind="probability" x="47396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id166"/>
+			<target ref="id0"/>
+			<label kind="probability" x="47996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id167"/>
+			<target ref="id48"/>
+			<label kind="probability" x="5396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id168"/>
+			<target ref="id41"/>
+			<label kind="probability" x="5996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id169"/>
+			<target ref="id51"/>
+			<label kind="probability" x="4196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id170"/>
+			<target ref="id49"/>
+			<label kind="probability" x="4796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id171"/>
+			<target ref="id56"/>
+			<label kind="probability" x="2996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id172"/>
+			<target ref="id52"/>
+			<label kind="probability" x="3596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id173"/>
+			<target ref="id57"/>
+			<label kind="probability" x="1796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id174"/>
+			<target ref="id53"/>
+			<label kind="probability" x="2396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id175"/>
+			<target ref="id65"/>
+			<label kind="probability" x="596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id176"/>
+			<target ref="id60"/>
+			<label kind="probability" x="1196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id177"/>
+			<target ref="id80"/>
+			<label kind="probability" x="36596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id178"/>
+			<target ref="id82"/>
+			<label kind="probability" x="37196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id179"/>
+			<target ref="id76"/>
+			<label kind="probability" x="37796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id180"/>
+			<target ref="id78"/>
+			<label kind="probability" x="38396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id181"/>
+			<target ref="id36"/>
+			<label kind="probability" x="38996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id182"/>
+			<target ref="id34"/>
+			<label kind="probability" x="39596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id183"/>
+			<target ref="id35"/>
+			<label kind="probability" x="40196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id184"/>
+			<target ref="id30"/>
+			<label kind="probability" x="40796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id185"/>
+			<target ref="id32"/>
+			<label kind="probability" x="41396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id186"/>
+			<target ref="id46"/>
+			<label kind="probability" x="41996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id187"/>
+			<target ref="id117"/>
+			<label kind="probability" x="30596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id188"/>
+			<target ref="id108"/>
+			<label kind="probability" x="31196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id189"/>
+			<target ref="id111"/>
+			<label kind="probability" x="31796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id190"/>
+			<target ref="id104"/>
+			<label kind="probability" x="32396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id191"/>
+			<target ref="id62"/>
+			<label kind="probability" x="32996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id192"/>
+			<target ref="id66"/>
+			<label kind="probability" x="33596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id193"/>
+			<target ref="id54"/>
+			<label kind="probability" x="34196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id194"/>
+			<target ref="id58"/>
+			<label kind="probability" x="34796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id195"/>
+			<target ref="id50"/>
+			<label kind="probability" x="35396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id196"/>
+			<target ref="id83"/>
+			<label kind="probability" x="35996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id197"/>
+			<target ref="id79"/>
+			<label kind="probability" x="24596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id198"/>
+			<target ref="id77"/>
+			<label kind="probability" x="25196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id199"/>
+			<target ref="id75"/>
+			<label kind="probability" x="25796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id200"/>
+			<target ref="id74"/>
+			<label kind="probability" x="26396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id201"/>
+			<target ref="id71"/>
+			<label kind="probability" x="26996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id202"/>
+			<target ref="id68"/>
+			<label kind="probability" x="27596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id203"/>
+			<target ref="id64"/>
+			<label kind="probability" x="28196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id204"/>
+			<target ref="id59"/>
+			<label kind="probability" x="28796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id205"/>
+			<target ref="id69"/>
+			<label kind="probability" x="-4" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id206"/>
+			<target ref="id55"/>
+			<label kind="probability" x="29396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id207"/>
+			<target ref="id115"/>
+			<label kind="probability" x="29996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id208"/>
+			<target ref="id110"/>
+			<label kind="probability" x="18596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id209"/>
+			<target ref="id107"/>
+			<label kind="probability" x="19196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id210"/>
+			<target ref="id105"/>
+			<label kind="probability" x="19796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id211"/>
+			<target ref="id103"/>
+			<label kind="probability" x="20396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id212"/>
+			<target ref="id97"/>
+			<label kind="probability" x="20996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id213"/>
+			<target ref="id96"/>
+			<label kind="probability" x="63596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id214"/>
+			<target ref="id94"/>
+			<label kind="probability" x="21596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id215"/>
+			<target ref="id88"/>
+			<label kind="probability" x="64196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id216"/>
+			<target ref="id91"/>
+			<label kind="probability" x="22196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id217"/>
+			<target ref="id90"/>
+			<label kind="probability" x="64796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id218"/>
+			<target ref="id89"/>
+			<label kind="probability" x="22796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id219"/>
+			<target ref="id86"/>
+			<label kind="probability" x="65396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id220"/>
+			<target ref="id87"/>
+			<label kind="probability" x="23396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id221"/>
+			<target ref="id112"/>
+			<label kind="probability" x="65996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id222"/>
+			<target ref="id81"/>
+			<label kind="probability" x="23996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id223"/>
+			<target ref="id17"/>
+			<label kind="probability" x="60596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id224"/>
+			<target ref="id19"/>
+			<label kind="probability" x="61196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id225"/>
+			<target ref="id13"/>
+			<label kind="probability" x="61796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id226"/>
+			<target ref="id15"/>
+			<label kind="probability" x="62396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id227"/>
+			<target ref="id93"/>
+			<label kind="probability" x="62996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id228"/>
+			<target ref="id18"/>
+			<label kind="probability" x="12596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id229"/>
+			<target ref="id16"/>
+			<label kind="probability" x="13196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id230"/>
+			<target ref="id14"/>
+			<label kind="probability" x="13796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id231"/>
+			<target ref="id12"/>
+			<label kind="probability" x="14396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id232"/>
+			<target ref="id7"/>
+			<label kind="probability" x="14996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id233"/>
+			<target ref="id5"/>
+			<label kind="probability" x="15596" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id234"/>
+			<target ref="id4"/>
+			<label kind="probability" x="16196" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id235"/>
+			<target ref="id2"/>
+			<label kind="probability" x="16796" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id236"/>
+			<target ref="id1"/>
+			<label kind="probability" x="17396" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id237"/>
+			<target ref="id113"/>
+			<label kind="probability" x="17996" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id140"/>
+			<label kind="guard" x="48150" y="-20">tg &gt;=2062</label>
+			<label kind="assignment" x="48150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<label kind="guard" x="48000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2062</label>
+			<label kind="assignment" x="48000" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="47970" y="-30"/>
+			<nail x="48030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id1"/>
+			<label kind="guard" x="17400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;811</label>
+			<label kind="assignment" x="17400" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="17370" y="-30"/>
+			<nail x="17430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id237"/>
+			<label kind="guard" x="17550" y="-20">tg &gt;=811</label>
+			<label kind="assignment" x="17550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id2"/>
+			<label kind="guard" x="16800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;763</label>
+			<label kind="assignment" x="16800" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="16770" y="-30"/>
+			<nail x="16830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id236"/>
+			<label kind="guard" x="16950" y="-20">tg &gt;=763</label>
+			<label kind="assignment" x="16950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="guard" x="47400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2060</label>
+			<label kind="assignment" x="47400" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="47370" y="-30"/>
+			<nail x="47430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id166"/>
+			<label kind="guard" x="47550" y="-20">tg &gt;=2060</label>
+			<label kind="assignment" x="47550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id235"/>
+			<label kind="guard" x="16350" y="-20">tg &gt;=761</label>
+			<label kind="assignment" x="16350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id4"/>
+			<label kind="guard" x="16200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;761</label>
+			<label kind="assignment" x="16200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="16170" y="-30"/>
+			<nail x="16230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id234"/>
+			<label kind="guard" x="15750" y="-20">tg &gt;=713</label>
+			<label kind="assignment" x="15750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id5"/>
+			<label kind="guard" x="15600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;713</label>
+			<label kind="assignment" x="15600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="15570" y="-30"/>
+			<nail x="15630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id164"/>
+			<label kind="guard" x="46350" y="-20">tg &gt;=2010</label>
+			<label kind="assignment" x="46350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id6"/>
+			<label kind="guard" x="46200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2010</label>
+			<label kind="assignment" x="46200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="46170" y="-30"/>
+			<nail x="46230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id233"/>
+			<label kind="guard" x="15150" y="-20">tg &gt;=711</label>
+			<label kind="assignment" x="15150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id7"/>
+			<label kind="guard" x="15000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;711</label>
+			<label kind="assignment" x="15000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="14970" y="-30"/>
+			<nail x="15030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id8"/>
+			<label kind="guard" x="46800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2012</label>
+			<label kind="assignment" x="46800" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="46770" y="-30"/>
+			<nail x="46830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id165"/>
+			<label kind="guard" x="46950" y="-20">tg &gt;=2012</label>
+			<label kind="assignment" x="46950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id162"/>
+			<label kind="guard" x="45150" y="-20">tg &gt;=1960</label>
+			<label kind="assignment" x="45150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id9"/>
+			<label kind="guard" x="45000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1960</label>
+			<label kind="assignment" x="45000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="44970" y="-30"/>
+			<nail x="45030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id163"/>
+			<label kind="guard" x="45750" y="-20">tg &gt;=1962</label>
+			<label kind="assignment" x="45750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id10"/>
+			<label kind="guard" x="45600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1962</label>
+			<label kind="assignment" x="45600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="45570" y="-30"/>
+			<nail x="45630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id11"/>
+			<label kind="guard" x="51000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2210</label>
+			<label kind="assignment" x="51000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="50970" y="-30"/>
+			<nail x="51030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id145"/>
+			<label kind="guard" x="51150" y="-20">tg &gt;=2210</label>
+			<label kind="assignment" x="51150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id12"/>
+			<label kind="guard" x="14400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;663</label>
+			<label kind="assignment" x="14400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="14370" y="-30"/>
+			<nail x="14430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id232"/>
+			<label kind="guard" x="14550" y="-20">tg &gt;=663</label>
+			<label kind="assignment" x="14550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id226"/>
+			<label kind="guard" x="61950" y="-20">tg &gt;=2660</label>
+			<label kind="assignment" x="61950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id13"/>
+			<label kind="guard" x="61800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2660</label>
+			<label kind="assignment" x="61800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="61770" y="-30"/>
+			<nail x="61830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id231"/>
+			<label kind="guard" x="13950" y="-20">tg &gt;=661</label>
+			<label kind="assignment" x="13950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id14"/>
+			<label kind="guard" x="13800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;661</label>
+			<label kind="assignment" x="13800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="13770" y="-30"/>
+			<nail x="13830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id15"/>
+			<label kind="guard" x="62400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2662</label>
+			<label kind="assignment" x="62400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="62370" y="-30"/>
+			<nail x="62430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id227"/>
+			<label kind="guard" x="62550" y="-20">tg &gt;=2662</label>
+			<label kind="assignment" x="62550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id16"/>
+			<label kind="guard" x="13200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;613</label>
+			<label kind="assignment" x="13200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="13170" y="-30"/>
+			<nail x="13230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id230"/>
+			<label kind="guard" x="13350" y="-20">tg &gt;=613</label>
+			<label kind="assignment" x="13350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id224"/>
+			<label kind="guard" x="60750" y="-20">tg &gt;=2610</label>
+			<label kind="assignment" x="60750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id17"/>
+			<label kind="guard" x="60600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2610</label>
+			<label kind="assignment" x="60600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="60570" y="-30"/>
+			<nail x="60630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id229"/>
+			<label kind="guard" x="12750" y="-20">tg &gt;=611</label>
+			<label kind="assignment" x="12750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id18"/>
+			<label kind="guard" x="12600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;611</label>
+			<label kind="assignment" x="12600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="12570" y="-30"/>
+			<nail x="12630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id19"/>
+			<label kind="guard" x="61200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2612</label>
+			<label kind="assignment" x="61200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="61170" y="-30"/>
+			<nail x="61230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id225"/>
+			<label kind="guard" x="61350" y="-20">tg &gt;=2612</label>
+			<label kind="assignment" x="61350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id20"/>
+			<label kind="guard" x="12000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;563</label>
+			<label kind="assignment" x="12000" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="11970" y="-30"/>
+			<nail x="12030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id228"/>
+			<label kind="guard" x="12150" y="-20">tg &gt;=563</label>
+			<label kind="assignment" x="12150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id143"/>
+			<label kind="guard" x="49950" y="-20">tg &gt;=2160</label>
+			<label kind="assignment" x="49950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id21"/>
+			<label kind="guard" x="49800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2160</label>
+			<label kind="assignment" x="49800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="49770" y="-30"/>
+			<nail x="49830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id22"/>
+			<label kind="guard" x="60000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2562</label>
+			<label kind="assignment" x="60000" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="59970" y="-30"/>
+			<nail x="60030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id223"/>
+			<label kind="guard" x="60150" y="-20">tg &gt;=2562</label>
+			<label kind="assignment" x="60150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id144"/>
+			<label kind="guard" x="50550" y="-20">tg &gt;=2162</label>
+			<label kind="assignment" x="50550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id23"/>
+			<label kind="guard" x="50400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2162</label>
+			<label kind="assignment" x="50400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="50370" y="-30"/>
+			<nail x="50430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id24"/>
+			<label kind="guard" x="48600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2110</label>
+			<label kind="assignment" x="48600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="48570" y="-30"/>
+			<nail x="48630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id141"/>
+			<label kind="guard" x="48750" y="-20">tg &gt;=2110</label>
+			<label kind="assignment" x="48750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id25"/>
+			<label kind="guard" x="49200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2112</label>
+			<label kind="assignment" x="49200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="49170" y="-30"/>
+			<nail x="49230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id142"/>
+			<label kind="guard" x="49350" y="-20">tg &gt;=2112</label>
+			<label kind="assignment" x="49350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id139"/>
+			<label kind="guard" x="11550" y="-20">tg &gt;=561</label>
+			<label kind="assignment" x="11550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id27"/>
+			<label kind="guard" x="11400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;561</label>
+			<label kind="assignment" x="11400" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="11370" y="-30"/>
+			<nail x="11430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id138"/>
+			<label kind="guard" x="10950" y="-20">tg &gt;=513</label>
+			<label kind="assignment" x="10950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id28"/>
+			<label kind="guard" x="10800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;513</label>
+			<label kind="assignment" x="10800" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="10770" y="-30"/>
+			<nail x="10830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id137"/>
+			<label kind="guard" x="10350" y="-20">tg &gt;=511</label>
+			<label kind="assignment" x="10350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id29"/>
+			<label kind="guard" x="10200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;511</label>
+			<label kind="assignment" x="10200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="10170" y="-30"/>
+			<nail x="10230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id30"/>
+			<label kind="guard" x="40800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1763</label>
+			<label kind="assignment" x="40800" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="40770" y="-30"/>
+			<nail x="40830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id185"/>
+			<label kind="guard" x="40950" y="-20">tg &gt;=1763</label>
+			<label kind="assignment" x="40950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id31"/>
+			<label kind="guard" x="9600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;463</label>
+			<label kind="assignment" x="9600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="9570" y="-30"/>
+			<nail x="9630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id136"/>
+			<label kind="guard" x="9750" y="-20">tg &gt;=463</label>
+			<label kind="assignment" x="9750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id32"/>
+			<label kind="guard" x="41400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1811</label>
+			<label kind="assignment" x="41400" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="41370" y="-30"/>
+			<nail x="41430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id186"/>
+			<label kind="guard" x="41550" y="-20">tg &gt;=1811</label>
+			<label kind="assignment" x="41550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id33"/>
+			<label kind="guard" x="9000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;461</label>
+			<label kind="assignment" x="9000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="8970" y="-30"/>
+			<nail x="9030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id135"/>
+			<label kind="guard" x="9150" y="-20">tg &gt;=461</label>
+			<label kind="assignment" x="9150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id34"/>
+			<label kind="guard" x="39600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1713</label>
+			<label kind="assignment" x="39600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="39570" y="-30"/>
+			<nail x="39630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id183"/>
+			<label kind="guard" x="39750" y="-20">tg &gt;=1713</label>
+			<label kind="assignment" x="39750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id184"/>
+			<label kind="guard" x="40350" y="-20">tg &gt;=1761</label>
+			<label kind="assignment" x="40350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id35"/>
+			<label kind="guard" x="40200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1761</label>
+			<label kind="assignment" x="40200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="40170" y="-30"/>
+			<nail x="40230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id36"/>
+			<target ref="id182"/>
+			<label kind="guard" x="39150" y="-20">tg &gt;=1711</label>
+			<label kind="assignment" x="39150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id36"/>
+			<target ref="id36"/>
+			<label kind="guard" x="39000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1711</label>
+			<label kind="assignment" x="39000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="38970" y="-30"/>
+			<nail x="39030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id37"/>
+			<target ref="id134"/>
+			<label kind="guard" x="8550" y="-20">tg &gt;=413</label>
+			<label kind="assignment" x="8550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id37"/>
+			<target ref="id37"/>
+			<label kind="guard" x="8400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;413</label>
+			<label kind="assignment" x="8400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="8370" y="-30"/>
+			<nail x="8430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id38"/>
+			<target ref="id133"/>
+			<label kind="guard" x="7950" y="-20">tg &gt;=411</label>
+			<label kind="assignment" x="7950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id38"/>
+			<target ref="id38"/>
+			<label kind="guard" x="7800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;411</label>
+			<label kind="assignment" x="7800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="7770" y="-30"/>
+			<nail x="7830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id39"/>
+			<target ref="id132"/>
+			<label kind="guard" x="7350" y="-20">tg &gt;=363</label>
+			<label kind="assignment" x="7350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id39"/>
+			<target ref="id39"/>
+			<label kind="guard" x="7200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;363</label>
+			<label kind="assignment" x="7200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="7170" y="-30"/>
+			<nail x="7230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id40"/>
+			<target ref="id40"/>
+			<label kind="guard" x="6600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;361</label>
+			<label kind="assignment" x="6600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="6570" y="-30"/>
+			<nail x="6630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id40"/>
+			<target ref="id131"/>
+			<label kind="guard" x="6750" y="-20">tg &gt;=361</label>
+			<label kind="assignment" x="6750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id41"/>
+			<target ref="id129"/>
+			<label kind="guard" x="6150" y="-20">tg &gt;=313</label>
+			<label kind="assignment" x="6150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id41"/>
+			<target ref="id41"/>
+			<label kind="guard" x="6000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;313</label>
+			<label kind="assignment" x="6000" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="5970" y="-30"/>
+			<nail x="6030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id42"/>
+			<target ref="id161"/>
+			<label kind="guard" x="44550" y="-20">tg &gt;=1912</label>
+			<label kind="assignment" x="44550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id42"/>
+			<target ref="id42"/>
+			<label kind="guard" x="44400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1912</label>
+			<label kind="assignment" x="44400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="44370" y="-30"/>
+			<nail x="44430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id43"/>
+			<target ref="id43"/>
+			<label kind="guard" x="43200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1862</label>
+			<label kind="assignment" x="43200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="43170" y="-30"/>
+			<nail x="43230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id43"/>
+			<target ref="id159"/>
+			<label kind="guard" x="43350" y="-20">tg &gt;=1862</label>
+			<label kind="assignment" x="43350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id44"/>
+			<target ref="id205"/>
+			<label kind="assignment" x="-350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id45"/>
+			<target ref="id160"/>
+			<label kind="guard" x="43950" y="-20">tg &gt;=1910</label>
+			<label kind="assignment" x="43950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id45"/>
+			<target ref="id45"/>
+			<label kind="guard" x="43800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1910</label>
+			<label kind="assignment" x="43800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="43770" y="-30"/>
+			<nail x="43830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id46"/>
+			<target ref="id46"/>
+			<label kind="guard" x="42000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1812</label>
+			<label kind="assignment" x="42000" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="41970" y="-30"/>
+			<nail x="42030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id46"/>
+			<target ref="id157"/>
+			<label kind="guard" x="42150" y="-20">tg &gt;=1812</label>
+			<label kind="assignment" x="42150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id47"/>
+			<target ref="id47"/>
+			<label kind="guard" x="42600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1860</label>
+			<label kind="assignment" x="42600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="42570" y="-30"/>
+			<nail x="42630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id47"/>
+			<target ref="id158"/>
+			<label kind="guard" x="42750" y="-20">tg &gt;=1860</label>
+			<label kind="assignment" x="42750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id48"/>
+			<target ref="id168"/>
+			<label kind="guard" x="5550" y="-20">tg &gt;=311</label>
+			<label kind="assignment" x="5550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id48"/>
+			<target ref="id48"/>
+			<label kind="guard" x="5400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;311</label>
+			<label kind="assignment" x="5400" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="5370" y="-30"/>
+			<nail x="5430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id49"/>
+			<target ref="id49"/>
+			<label kind="guard" x="4800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;263</label>
+			<label kind="assignment" x="4800" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="4770" y="-30"/>
+			<nail x="4830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id49"/>
+			<target ref="id167"/>
+			<label kind="guard" x="4950" y="-20">tg &gt;=263</label>
+			<label kind="assignment" x="4950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id50"/>
+			<target ref="id50"/>
+			<label kind="guard" x="35400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1561</label>
+			<label kind="assignment" x="35400" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="35370" y="-30"/>
+			<nail x="35430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id50"/>
+			<target ref="id196"/>
+			<label kind="guard" x="35550" y="-20">tg &gt;=1561</label>
+			<label kind="assignment" x="35550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id51"/>
+			<target ref="id170"/>
+			<label kind="guard" x="4350" y="-20">tg &gt;=261</label>
+			<label kind="assignment" x="4350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id51"/>
+			<target ref="id51"/>
+			<label kind="guard" x="4200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;261</label>
+			<label kind="assignment" x="4200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="4170" y="-30"/>
+			<nail x="4230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id52"/>
+			<target ref="id169"/>
+			<label kind="guard" x="3750" y="-20">tg &gt;=213</label>
+			<label kind="assignment" x="3750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id52"/>
+			<target ref="id52"/>
+			<label kind="guard" x="3600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;213</label>
+			<label kind="assignment" x="3600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="3570" y="-30"/>
+			<nail x="3630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id53"/>
+			<target ref="id171"/>
+			<label kind="guard" x="2550" y="-20">tg &gt;=162</label>
+			<label kind="assignment" x="2550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id53"/>
+			<target ref="id53"/>
+			<label kind="guard" x="2400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;162</label>
+			<label kind="assignment" x="2400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="2370" y="-30"/>
+			<nail x="2430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id54"/>
+			<target ref="id54"/>
+			<label kind="guard" x="34200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1511</label>
+			<label kind="assignment" x="34200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="34170" y="-30"/>
+			<nail x="34230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id54"/>
+			<target ref="id194"/>
+			<label kind="guard" x="34350" y="-20">tg &gt;=1511</label>
+			<label kind="assignment" x="34350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id55"/>
+			<target ref="id55"/>
+			<label kind="guard" x="29400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1311</label>
+			<label kind="assignment" x="29400" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="29370" y="-30"/>
+			<nail x="29430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id55"/>
+			<target ref="id207"/>
+			<label kind="guard" x="29550" y="-20">tg &gt;=1311</label>
+			<label kind="assignment" x="29550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id56"/>
+			<target ref="id56"/>
+			<label kind="guard" x="3000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;210</label>
+			<label kind="assignment" x="3000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="2970" y="-30"/>
+			<nail x="3030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id56"/>
+			<target ref="id172"/>
+			<label kind="guard" x="3150" y="-20">tg &gt;=210</label>
+			<label kind="assignment" x="3150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id57"/>
+			<target ref="id57"/>
+			<label kind="guard" x="1800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;160</label>
+			<label kind="assignment" x="1800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="1770" y="-30"/>
+			<nail x="1830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id57"/>
+			<target ref="id174"/>
+			<label kind="guard" x="1950" y="-20">tg &gt;=160</label>
+			<label kind="assignment" x="1950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id58"/>
+			<target ref="id58"/>
+			<label kind="guard" x="34800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1513</label>
+			<label kind="assignment" x="34800" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="34770" y="-30"/>
+			<nail x="34830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id58"/>
+			<target ref="id195"/>
+			<label kind="guard" x="34950" y="-20">tg &gt;=1513</label>
+			<label kind="assignment" x="34950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id59"/>
+			<target ref="id59"/>
+			<label kind="guard" x="28800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1263</label>
+			<label kind="assignment" x="28800" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="28770" y="-30"/>
+			<nail x="28830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id59"/>
+			<target ref="id206"/>
+			<label kind="guard" x="28950" y="-20">tg &gt;=1263</label>
+			<label kind="assignment" x="28950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id60"/>
+			<target ref="id60"/>
+			<label kind="guard" x="1200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;112</label>
+			<label kind="assignment" x="1200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="1170" y="-30"/>
+			<nail x="1230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id60"/>
+			<target ref="id173"/>
+			<label kind="guard" x="1350" y="-20">tg &gt;=112</label>
+			<label kind="assignment" x="1350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id61"/>
+			<target ref="id130"/>
+			<label kind="guard" x="59550" y="-20">tg &gt;=2560</label>
+			<label kind="assignment" x="59550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id61"/>
+			<target ref="id61"/>
+			<label kind="guard" x="59400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2560</label>
+			<label kind="assignment" x="59400" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="59370" y="-30"/>
+			<nail x="59430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id62"/>
+			<target ref="id192"/>
+			<label kind="guard" x="33150" y="-20">tg &gt;=1461</label>
+			<label kind="assignment" x="33150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id62"/>
+			<target ref="id62"/>
+			<label kind="guard" x="33000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1461</label>
+			<label kind="assignment" x="33000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="32970" y="-30"/>
+			<nail x="33030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id63"/>
+			<target ref="id150"/>
+			<label kind="guard" x="69750" y="-20">tg &gt;=2962</label>
+			<label kind="assignment" x="69750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id63"/>
+			<target ref="id63"/>
+			<label kind="guard" x="69600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2962</label>
+			<label kind="assignment" x="69600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="69570" y="-30"/>
+			<nail x="69630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id64"/>
+			<target ref="id204"/>
+			<label kind="guard" x="28350" y="-20">tg &gt;=1261</label>
+			<label kind="assignment" x="28350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id64"/>
+			<target ref="id64"/>
+			<label kind="guard" x="28200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1261</label>
+			<label kind="assignment" x="28200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="28170" y="-30"/>
+			<nail x="28230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id65"/>
+			<target ref="id65"/>
+			<label kind="guard" x="600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;110</label>
+			<label kind="assignment" x="600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="570" y="-30"/>
+			<nail x="630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id65"/>
+			<target ref="id176"/>
+			<label kind="guard" x="750" y="-20">tg &gt;=110</label>
+			<label kind="assignment" x="750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id66"/>
+			<target ref="id66"/>
+			<label kind="guard" x="33600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1463</label>
+			<label kind="assignment" x="33600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="33570" y="-30"/>
+			<nail x="33630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id66"/>
+			<target ref="id193"/>
+			<label kind="guard" x="33750" y="-20">tg &gt;=1463</label>
+			<label kind="assignment" x="33750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id67"/>
+			<target ref="id26"/>
+			<label kind="guard" x="70500" y="130">tg &gt;=2999.0</label>
+		</transition>
+		<transition>
+			<source ref="id67"/>
+			<target ref="id67"/>
+			<label kind="guard" x="70200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2999</label>
+			<label kind="assignment" x="70200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="70170" y="-30"/>
+			<nail x="70230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id68"/>
+			<target ref="id68"/>
+			<label kind="guard" x="27600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1213</label>
+			<label kind="assignment" x="27600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="27570" y="-30"/>
+			<nail x="27630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id68"/>
+			<target ref="id203"/>
+			<label kind="guard" x="27750" y="-20">tg &gt;=1213</label>
+			<label kind="assignment" x="27750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id69"/>
+			<target ref="id175"/>
+			<label kind="guard" x="150" y="-20">tg &gt;=62</label>
+			<label kind="assignment" x="150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id69"/>
+			<target ref="id69"/>
+			<label kind="guard" x="0" y="-70">ti&gt;=1 &amp;&amp; tg&lt;62</label>
+			<label kind="assignment" x="0" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="-30" y="-30"/>
+			<nail x="30" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id70"/>
+			<target ref="id127"/>
+			<label kind="guard" x="58350" y="-20">tg &gt;=2510</label>
+			<label kind="assignment" x="58350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id70"/>
+			<target ref="id70"/>
+			<label kind="guard" x="58200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2510</label>
+			<label kind="assignment" x="58200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="58170" y="-30"/>
+			<nail x="58230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id71"/>
+			<target ref="id202"/>
+			<label kind="guard" x="27150" y="-20">tg &gt;=1211</label>
+			<label kind="assignment" x="27150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id71"/>
+			<target ref="id71"/>
+			<label kind="guard" x="27000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1211</label>
+			<label kind="assignment" x="27000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="26970" y="-30"/>
+			<nail x="27030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id72"/>
+			<target ref="id72"/>
+			<label kind="guard" x="58800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2512</label>
+			<label kind="assignment" x="58800" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="58770" y="-30"/>
+			<nail x="58830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id72"/>
+			<target ref="id128"/>
+			<label kind="guard" x="58950" y="-20">tg &gt;=2512</label>
+			<label kind="assignment" x="58950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id73"/>
+			<target ref="id73"/>
+			<label kind="guard" x="69000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2960</label>
+			<label kind="assignment" x="69000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="68970" y="-30"/>
+			<nail x="69030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id73"/>
+			<target ref="id156"/>
+			<label kind="guard" x="69150" y="-20">tg &gt;=2960</label>
+			<label kind="assignment" x="69150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id74"/>
+			<target ref="id201"/>
+			<label kind="guard" x="26550" y="-20">tg &gt;=1163</label>
+			<label kind="assignment" x="26550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id74"/>
+			<target ref="id74"/>
+			<label kind="guard" x="26400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1163</label>
+			<label kind="assignment" x="26400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="26370" y="-30"/>
+			<nail x="26430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id75"/>
+			<target ref="id200"/>
+			<label kind="guard" x="25950" y="-20">tg &gt;=1161</label>
+			<label kind="assignment" x="25950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id75"/>
+			<target ref="id75"/>
+			<label kind="guard" x="25800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1161</label>
+			<label kind="assignment" x="25800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="25770" y="-30"/>
+			<nail x="25830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id76"/>
+			<target ref="id180"/>
+			<label kind="guard" x="37950" y="-20">tg &gt;=1661</label>
+			<label kind="assignment" x="37950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id76"/>
+			<target ref="id76"/>
+			<label kind="guard" x="37800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1661</label>
+			<label kind="assignment" x="37800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="37770" y="-30"/>
+			<nail x="37830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id77"/>
+			<target ref="id77"/>
+			<label kind="guard" x="25200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1113</label>
+			<label kind="assignment" x="25200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="25170" y="-30"/>
+			<nail x="25230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id77"/>
+			<target ref="id199"/>
+			<label kind="guard" x="25350" y="-20">tg &gt;=1113</label>
+			<label kind="assignment" x="25350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id78"/>
+			<target ref="id181"/>
+			<label kind="guard" x="38550" y="-20">tg &gt;=1663</label>
+			<label kind="assignment" x="38550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id78"/>
+			<target ref="id78"/>
+			<label kind="guard" x="38400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1663</label>
+			<label kind="assignment" x="38400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="38370" y="-30"/>
+			<nail x="38430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id79"/>
+			<target ref="id79"/>
+			<label kind="guard" x="24600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1111</label>
+			<label kind="assignment" x="24600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="24570" y="-30"/>
+			<nail x="24630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id79"/>
+			<target ref="id198"/>
+			<label kind="guard" x="24750" y="-20">tg &gt;=1111</label>
+			<label kind="assignment" x="24750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id80"/>
+			<target ref="id178"/>
+			<label kind="guard" x="36750" y="-20">tg &gt;=1611</label>
+			<label kind="assignment" x="36750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id80"/>
+			<target ref="id80"/>
+			<label kind="guard" x="36600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1611</label>
+			<label kind="assignment" x="36600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="36570" y="-30"/>
+			<nail x="36630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id81"/>
+			<target ref="id197"/>
+			<label kind="guard" x="24150" y="-20">tg &gt;=1063</label>
+			<label kind="assignment" x="24150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id81"/>
+			<target ref="id81"/>
+			<label kind="guard" x="24000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1063</label>
+			<label kind="assignment" x="24000" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="23970" y="-30"/>
+			<nail x="24030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id82"/>
+			<target ref="id82"/>
+			<label kind="guard" x="37200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1613</label>
+			<label kind="assignment" x="37200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="37170" y="-30"/>
+			<nail x="37230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id82"/>
+			<target ref="id179"/>
+			<label kind="guard" x="37350" y="-20">tg &gt;=1613</label>
+			<label kind="assignment" x="37350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id83"/>
+			<target ref="id83"/>
+			<label kind="guard" x="36000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1563</label>
+			<label kind="assignment" x="36000" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="35970" y="-30"/>
+			<nail x="36030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id83"/>
+			<target ref="id177"/>
+			<label kind="guard" x="36150" y="-20">tg &gt;=1563</label>
+			<label kind="assignment" x="36150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id84"/>
+			<target ref="id120"/>
+			<label kind="guard" x="54150" y="-20">tg &gt;=2312</label>
+			<label kind="assignment" x="54150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id84"/>
+			<target ref="id84"/>
+			<label kind="guard" x="54000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2312</label>
+			<label kind="assignment" x="54000" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="53970" y="-30"/>
+			<nail x="54030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id85"/>
+			<target ref="id121"/>
+			<label kind="guard" x="54750" y="-20">tg &gt;=2360</label>
+			<label kind="assignment" x="54750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id85"/>
+			<target ref="id85"/>
+			<label kind="guard" x="54600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2360</label>
+			<label kind="assignment" x="54600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="54570" y="-30"/>
+			<nail x="54630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id86"/>
+			<target ref="id221"/>
+			<label kind="guard" x="65550" y="-20">tg &gt;=2810</label>
+			<label kind="assignment" x="65550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id86"/>
+			<target ref="id86"/>
+			<label kind="guard" x="65400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2810</label>
+			<label kind="assignment" x="65400" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="65370" y="-30"/>
+			<nail x="65430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id87"/>
+			<target ref="id87"/>
+			<label kind="guard" x="23400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1061</label>
+			<label kind="assignment" x="23400" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="23370" y="-30"/>
+			<nail x="23430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id87"/>
+			<target ref="id222"/>
+			<label kind="guard" x="23550" y="-20">tg &gt;=1061</label>
+			<label kind="assignment" x="23550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id88"/>
+			<target ref="id88"/>
+			<label kind="guard" x="64200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2760</label>
+			<label kind="assignment" x="64200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="64170" y="-30"/>
+			<nail x="64230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id88"/>
+			<target ref="id217"/>
+			<label kind="guard" x="64350" y="-20">tg &gt;=2760</label>
+			<label kind="assignment" x="64350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id89"/>
+			<target ref="id220"/>
+			<label kind="guard" x="22950" y="-20">tg &gt;=1013</label>
+			<label kind="assignment" x="22950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id89"/>
+			<target ref="id89"/>
+			<label kind="guard" x="22800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1013</label>
+			<label kind="assignment" x="22800" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="22770" y="-30"/>
+			<nail x="22830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id90"/>
+			<target ref="id219"/>
+			<label kind="guard" x="64950" y="-20">tg &gt;=2762</label>
+			<label kind="assignment" x="64950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id90"/>
+			<target ref="id90"/>
+			<label kind="guard" x="64800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2762</label>
+			<label kind="assignment" x="64800" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="64770" y="-30"/>
+			<nail x="64830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id91"/>
+			<target ref="id91"/>
+			<label kind="guard" x="22200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1011</label>
+			<label kind="assignment" x="22200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="22170" y="-30"/>
+			<nail x="22230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id91"/>
+			<target ref="id218"/>
+			<label kind="guard" x="22350" y="-20">tg &gt;=1011</label>
+			<label kind="assignment" x="22350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id92"/>
+			<target ref="id92"/>
+			<label kind="guard" x="52800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2262</label>
+			<label kind="assignment" x="52800" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="52770" y="-30"/>
+			<nail x="52830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id92"/>
+			<target ref="id148"/>
+			<label kind="guard" x="52950" y="-20">tg &gt;=2262</label>
+			<label kind="assignment" x="52950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id93"/>
+			<target ref="id93"/>
+			<label kind="guard" x="63000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2710</label>
+			<label kind="assignment" x="63000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="62970" y="-30"/>
+			<nail x="63030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id93"/>
+			<target ref="id213"/>
+			<label kind="guard" x="63150" y="-20">tg &gt;=2710</label>
+			<label kind="assignment" x="63150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id94"/>
+			<target ref="id216"/>
+			<label kind="guard" x="21750" y="-20">tg &gt;=963</label>
+			<label kind="assignment" x="21750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id94"/>
+			<target ref="id94"/>
+			<label kind="guard" x="21600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;963</label>
+			<label kind="assignment" x="21600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="21570" y="-30"/>
+			<nail x="21630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id95"/>
+			<target ref="id149"/>
+			<label kind="guard" x="53550" y="-20">tg &gt;=2310</label>
+			<label kind="assignment" x="53550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id95"/>
+			<target ref="id95"/>
+			<label kind="guard" x="53400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2310</label>
+			<label kind="assignment" x="53400" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="53370" y="-30"/>
+			<nail x="53430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id96"/>
+			<target ref="id96"/>
+			<label kind="guard" x="63600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2712</label>
+			<label kind="assignment" x="63600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="63570" y="-30"/>
+			<nail x="63630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id96"/>
+			<target ref="id215"/>
+			<label kind="guard" x="63750" y="-20">tg &gt;=2712</label>
+			<label kind="assignment" x="63750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id97"/>
+			<target ref="id214"/>
+			<label kind="guard" x="21150" y="-20">tg &gt;=961</label>
+			<label kind="assignment" x="21150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id97"/>
+			<target ref="id97"/>
+			<label kind="guard" x="21000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;961</label>
+			<label kind="assignment" x="21000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="20970" y="-30"/>
+			<nail x="21030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id98"/>
+			<target ref="id98"/>
+			<label kind="guard" x="51600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2212</label>
+			<label kind="assignment" x="51600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="51570" y="-30"/>
+			<nail x="51630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id98"/>
+			<target ref="id146"/>
+			<label kind="guard" x="51750" y="-20">tg &gt;=2212</label>
+			<label kind="assignment" x="51750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id99"/>
+			<target ref="id147"/>
+			<label kind="guard" x="52350" y="-20">tg &gt;=2260</label>
+			<label kind="assignment" x="52350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id99"/>
+			<target ref="id99"/>
+			<label kind="guard" x="52200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2260</label>
+			<label kind="assignment" x="52200" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="52170" y="-30"/>
+			<nail x="52230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id100"/>
+			<target ref="id100"/>
+			<label kind="guard" x="57000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2460</label>
+			<label kind="assignment" x="57000" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="56970" y="-30"/>
+			<nail x="57030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id100"/>
+			<target ref="id125"/>
+			<label kind="guard" x="57150" y="-20">tg &gt;=2460</label>
+			<label kind="assignment" x="57150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id101"/>
+			<target ref="id126"/>
+			<label kind="guard" x="57750" y="-20">tg &gt;=2462</label>
+			<label kind="assignment" x="57750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id101"/>
+			<target ref="id101"/>
+			<label kind="guard" x="57600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2462</label>
+			<label kind="assignment" x="57600" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="57570" y="-30"/>
+			<nail x="57630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id102"/>
+			<target ref="id102"/>
+			<label kind="guard" x="68400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2912</label>
+			<label kind="assignment" x="68400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="68370" y="-30"/>
+			<nail x="68430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id102"/>
+			<target ref="id155"/>
+			<label kind="guard" x="68550" y="-20">tg &gt;=2912</label>
+			<label kind="assignment" x="68550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id103"/>
+			<target ref="id212"/>
+			<label kind="guard" x="20550" y="-20">tg &gt;=913</label>
+			<label kind="assignment" x="20550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id103"/>
+			<target ref="id103"/>
+			<label kind="guard" x="20400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;913</label>
+			<label kind="assignment" x="20400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="20370" y="-30"/>
+			<nail x="20430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id104"/>
+			<target ref="id191"/>
+			<label kind="guard" x="32550" y="-20">tg &gt;=1413</label>
+			<label kind="assignment" x="32550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id104"/>
+			<target ref="id104"/>
+			<label kind="guard" x="32400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1413</label>
+			<label kind="assignment" x="32400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="32370" y="-30"/>
+			<nail x="32430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id105"/>
+			<target ref="id211"/>
+			<label kind="guard" x="19950" y="-20">tg &gt;=911</label>
+			<label kind="assignment" x="19950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id105"/>
+			<target ref="id105"/>
+			<label kind="guard" x="19800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;911</label>
+			<label kind="assignment" x="19800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="19770" y="-30"/>
+			<nail x="19830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id106"/>
+			<target ref="id106"/>
+			<label kind="guard" x="67200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2862</label>
+			<label kind="assignment" x="67200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="67170" y="-30"/>
+			<nail x="67230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id106"/>
+			<target ref="id153"/>
+			<label kind="guard" x="67350" y="-20">tg &gt;=2862</label>
+			<label kind="assignment" x="67350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id107"/>
+			<target ref="id107"/>
+			<label kind="guard" x="19200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;863</label>
+			<label kind="assignment" x="19200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="19170" y="-30"/>
+			<nail x="19230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id107"/>
+			<target ref="id210"/>
+			<label kind="guard" x="19350" y="-20">tg &gt;=863</label>
+			<label kind="assignment" x="19350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id108"/>
+			<target ref="id108"/>
+			<label kind="guard" x="31200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1363</label>
+			<label kind="assignment" x="31200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="31170" y="-30"/>
+			<nail x="31230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id108"/>
+			<target ref="id189"/>
+			<label kind="guard" x="31350" y="-20">tg &gt;=1363</label>
+			<label kind="assignment" x="31350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id109"/>
+			<target ref="id154"/>
+			<label kind="guard" x="67950" y="-20">tg &gt;=2910</label>
+			<label kind="assignment" x="67950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id109"/>
+			<target ref="id109"/>
+			<label kind="guard" x="67800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2910</label>
+			<label kind="assignment" x="67800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="67770" y="-30"/>
+			<nail x="67830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id110"/>
+			<target ref="id209"/>
+			<label kind="guard" x="18750" y="-20">tg &gt;=861</label>
+			<label kind="assignment" x="18750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id110"/>
+			<target ref="id110"/>
+			<label kind="guard" x="18600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;861</label>
+			<label kind="assignment" x="18600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="18570" y="-30"/>
+			<nail x="18630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id111"/>
+			<target ref="id111"/>
+			<label kind="guard" x="31800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1411</label>
+			<label kind="assignment" x="31800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="31770" y="-30"/>
+			<nail x="31830" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id111"/>
+			<target ref="id190"/>
+			<label kind="guard" x="31950" y="-20">tg &gt;=1411</label>
+			<label kind="assignment" x="31950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id112"/>
+			<target ref="id112"/>
+			<label kind="guard" x="66000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2812</label>
+			<label kind="assignment" x="66000" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="65970" y="-30"/>
+			<nail x="66030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id112"/>
+			<target ref="id151"/>
+			<label kind="guard" x="66150" y="-20">tg &gt;=2812</label>
+			<label kind="assignment" x="66150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id113"/>
+			<target ref="id113"/>
+			<label kind="guard" x="18000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;813</label>
+			<label kind="assignment" x="18000" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="17970" y="-30"/>
+			<nail x="18030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id113"/>
+			<target ref="id208"/>
+			<label kind="guard" x="18150" y="-20">tg &gt;=813</label>
+			<label kind="assignment" x="18150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id114"/>
+			<target ref="id114"/>
+			<label kind="guard" x="56400" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2412</label>
+			<label kind="assignment" x="56400" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="56370" y="-30"/>
+			<nail x="56430" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id114"/>
+			<target ref="id124"/>
+			<label kind="guard" x="56550" y="-20">tg &gt;=2412</label>
+			<label kind="assignment" x="56550" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id115"/>
+			<target ref="id115"/>
+			<label kind="guard" x="30000" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1313</label>
+			<label kind="assignment" x="30000" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="29970" y="-30"/>
+			<nail x="30030" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id115"/>
+			<target ref="id187"/>
+			<label kind="guard" x="30150" y="-20">tg &gt;=1313</label>
+			<label kind="assignment" x="30150" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id116"/>
+			<target ref="id152"/>
+			<label kind="guard" x="66750" y="-20">tg &gt;=2860</label>
+			<label kind="assignment" x="66750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id116"/>
+			<target ref="id116"/>
+			<label kind="guard" x="66600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2860</label>
+			<label kind="assignment" x="66600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="66570" y="-30"/>
+			<nail x="66630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id117"/>
+			<target ref="id188"/>
+			<label kind="guard" x="30750" y="-20">tg &gt;=1361</label>
+			<label kind="assignment" x="30750" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id117"/>
+			<target ref="id117"/>
+			<label kind="guard" x="30600" y="-70">ti&gt;=1 &amp;&amp; tg&lt;1361</label>
+			<label kind="assignment" x="30600" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="30570" y="-30"/>
+			<nail x="30630" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id118"/>
+			<target ref="id118"/>
+			<label kind="guard" x="55200" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2362</label>
+			<label kind="assignment" x="55200" y="-50">x = 0.0 * pow(cos(-92233720368.54776*tloc +0.0), 5), ti=0</label>
+			<nail x="55170" y="-30"/>
+			<nail x="55230" y="-30"/>
+		</transition>
+		<transition>
+			<source ref="id118"/>
+			<target ref="id122"/>
+			<label kind="guard" x="55350" y="-20">tg &gt;=2362</label>
+			<label kind="assignment" x="55350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id119"/>
+			<target ref="id123"/>
+			<label kind="guard" x="55950" y="-20">tg &gt;=2410</label>
+			<label kind="assignment" x="55950" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id119"/>
+			<target ref="id119"/>
+			<label kind="guard" x="55800" y="-70">ti&gt;=1 &amp;&amp; tg&lt;2410</label>
+			<label kind="assignment" x="55800" y="-50">x = 0.9901725 * pow(cos(0.0*tloc +0.0), 5), ti=0</label>
+			<nail x="55770" y="-30"/>
+			<nail x="55830" y="-30"/>
+		</transition>
+	</template>
+	<system>Process_x = T_x();
+system Process_x;</system>
+	<queries>
+		<query>
+			<formula>simulate 1[&lt;=2999] {Process_x.x}
+			</formula>
+			<comment>Query0
+			</comment>
+		</query>
+	</queries>
+</nta>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.</declaration>
+	<template>
+		<name x="5" y="5">Template</name>
+		<declaration>// Place local declarations here.
+clock t=0.0, tg=0.0;
+double x=0.0;</declaration>
+		<location id="id0" x="-1070" y="-1164">
+			<name x="-1044" y="-1172">Finish</name>
+		</location>
+		<location id="id1" x="-1887" y="-1164">
+			<name x="-1896" y="-1147">L4</name>
+			<label kind="invariant" x="-1904" y="-1130">t&lt;=1</label>
+		</location>
+		<location id="id2" x="-2150" y="-1164">
+			<name x="-2158" y="-1147">Init</name>
+			<urgent/>
+		</location>
+		<location id="id3" x="-1887" y="-1326">
+			<name x="-1896" y="-1309">L1</name>
+			<label kind="invariant" x="-1904" y="-1292">t&lt;=1</label>
+		</location>
+		<location id="id4" x="-1887" y="-986">
+			<name x="-1896" y="-969">L7</name>
+			<label kind="invariant" x="-1904" y="-952">t&lt;=1</label>
+		</location>
+		<location id="id5" x="-1717" y="-1326">
+			<name x="-1726" y="-1309">L2</name>
+			<label kind="invariant" x="-1734" y="-1292">t&lt;=1</label>
+		</location>
+		<location id="id6" x="-1538" y="-1326">
+			<name x="-1547" y="-1309">L3</name>
+			<label kind="invariant" x="-1555" y="-1292">t&lt;=1</label>
+		</location>
+		<location id="id7" x="-1266" y="-1232">
+			<name x="-1275" y="-1215">L5</name>
+			<label kind="invariant" x="-1283" y="-1198">t&lt;=1</label>
+		</location>
+		<location id="id8" x="-1265" y="-1079">
+			<name x="-1275" y="-1062">L6</name>
+			<label kind="invariant" x="-1282" y="-1045">t&lt;=1</label>
+		</location>
+		<branchpoint id="id9" x="-1394" y="-1164">
+		</branchpoint>
+		<branchpoint id="id10" x="-2065" y="-1164">
+		</branchpoint>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id9"/>
+			<label kind="guard" x="-1691" y="-1190">tg&gt;10</label>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id8"/>
+			<label kind="probability" x="-1377" y="-1139">1</label>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id7"/>
+			<label kind="probability" x="-1376" y="-1198">1</label>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-1691" y="-1011">tg&gt;30</label>
+			<nail x="-1071" y="-986"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id4"/>
+			<label kind="probability" x="-1997" y="-1122">1</label>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id3"/>
+			<label kind="probability" x="-1997" y="-1266">1</label>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-1189" y="-1147">tg&gt;30</label>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-1198" y="-1232">tg&gt;30</label>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-1317" y="-1351">tg&gt;45</label>
+			<nail x="-1071" y="-1326"/>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id6"/>
+			<label kind="guard" x="-1649" y="-1351">tg&gt;30</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id5"/>
+			<label kind="guard" x="-1819" y="-1351">tg&gt;15</label>
+			<nail x="-1810" y="-1326"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id1"/>
+			<label kind="probability" x="-1997" y="-1190">1</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id10"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-1930" y="-1232">t&gt;=1 &amp;&amp; tg&lt;=10</label>
+			<label kind="assignment" x="-1913" y="-1249">x=x+1, t=0</label>
+			<nail x="-1845" y="-1207"/>
+			<nail x="-1913" y="-1207"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-1930" y="-1394">t&gt;=1 &amp;&amp; tg&lt;=15</label>
+			<label kind="assignment" x="-1913" y="-1411">x=x+5, t=0</label>
+			<nail x="-1845" y="-1369"/>
+			<nail x="-1913" y="-1369"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id4"/>
+			<label kind="guard" x="-1930" y="-1054">t&gt;=1 &amp;&amp; tg&lt;=30</label>
+			<label kind="assignment" x="-1913" y="-1071">x=x+5.1, t=0</label>
+			<nail x="-1845" y="-1029"/>
+			<nail x="-1913" y="-1029"/>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id5"/>
+			<label kind="guard" x="-1760" y="-1394">t&gt;=1 &amp;&amp; tg&lt;=30</label>
+			<label kind="assignment" x="-1742" y="-1411">x=x+6, t=0</label>
+			<nail x="-1675" y="-1369"/>
+			<nail x="-1743" y="-1369"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id6"/>
+			<label kind="guard" x="-1581" y="-1394">t&gt;=1 &amp;&amp; tg&lt;=45</label>
+			<label kind="assignment" x="-1564" y="-1411">x=x+10, t=0</label>
+			<nail x="-1496" y="-1369"/>
+			<nail x="-1564" y="-1369"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id7"/>
+			<label kind="guard" x="-1309" y="-1300">t&gt;=1 &amp;&amp; tg&lt;=30</label>
+			<label kind="assignment" x="-1291" y="-1317">x=x+15, t=0</label>
+			<nail x="-1224" y="-1275"/>
+			<nail x="-1292" y="-1275"/>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id8"/>
+			<label kind="guard" x="-1308" y="-1147">t&gt;=1 &amp;&amp; tg&lt;=30</label>
+			<label kind="assignment" x="-1291" y="-1164">x=x-5, t=0</label>
+			<nail x="-1223" y="-1122"/>
+			<nail x="-1291" y="-1122"/>
+		</transition>
+	</template>
+	<template>
+		<name>Template0</name>
+		<declaration>clock t=0.0, tg=0.0;
+double x=0.0;</declaration>
+		<location id="id11" x="-2142" y="-1334">
+			<name x="-2150" y="-1317">Init</name>
+			<urgent/>
+		</location>
+		<location id="id12" x="-1436" y="-1334">
+			<name x="-1410" y="-1342">Finish</name>
+		</location>
+		<location id="id13" x="-1972" y="-1334">
+			<name x="-1981" y="-1317">L1</name>
+			<label kind="invariant" x="-1989" y="-1300">t&lt;=1</label>
+		</location>
+		<location id="id14" x="-1802" y="-1334">
+			<name x="-1811" y="-1317">L2</name>
+			<label kind="invariant" x="-1819" y="-1300">t&lt;=1</label>
+		</location>
+		<location id="id15" x="-1657" y="-1334">
+			<name x="-1666" y="-1317">L3</name>
+			<label kind="invariant" x="-1674" y="-1300">t&lt;=1</label>
+		</location>
+		<init ref="id11"/>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id13"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id12"/>
+			<label kind="guard" x="-1589" y="-1360">tg&gt;45</label>
+			<nail x="-1496" y="-1334"/>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id15"/>
+			<label kind="guard" x="-1751" y="-1360">tg&gt;30</label>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id14"/>
+			<label kind="guard" x="-1938" y="-1359">tg&gt;15</label>
+			<nail x="-1929" y="-1334"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id13"/>
+			<label kind="guard" x="-2014" y="-1402">t&gt;=1 &amp;&amp; tg&lt;=15</label>
+			<label kind="assignment" x="-1998" y="-1419">x=x+5, t=0</label>
+			<nail x="-1930" y="-1377"/>
+			<nail x="-1998" y="-1377"/>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id14"/>
+			<label kind="guard" x="-1845" y="-1402">t&gt;=1 &amp;&amp; tg&lt;=30</label>
+			<label kind="assignment" x="-1827" y="-1419">x=x+6, t=0</label>
+			<nail x="-1760" y="-1377"/>
+			<nail x="-1828" y="-1377"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id15"/>
+			<label kind="guard" x="-1691" y="-1402">t&gt;=1 &amp;&amp; tg&lt;=45</label>
+			<label kind="assignment" x="-1683" y="-1419">x=x+10, t=0</label>
+			<nail x="-1615" y="-1377"/>
+			<nail x="-1683" y="-1377"/>
+		</transition>
+	</template>
+	<template>
+		<name>Template1</name>
+		<declaration>clock t=0.0, tg=0.0;
+double x=0.0;</declaration>
+		<location id="id16" x="-2176" y="-1232">
+			<name x="-2184" y="-1215">Init</name>
+			<urgent/>
+		</location>
+		<location id="id17" x="-1972" y="-1122">
+			<name x="-1981" y="-1105">L4</name>
+			<label kind="invariant" x="-1989" y="-1088">t&lt;=1</label>
+		</location>
+		<location id="id18" x="-1496" y="-1122">
+			<name x="-1470" y="-1130">Finish</name>
+		</location>
+		<location id="id19" x="-1972" y="-1334">
+			<name x="-1981" y="-1317">L1</name>
+			<label kind="invariant" x="-1989" y="-1300">t&lt;=1</label>
+		</location>
+		<location id="id20" x="-1802" y="-1334">
+			<name x="-1811" y="-1317">L2</name>
+			<label kind="invariant" x="-1819" y="-1300">t&lt;=1</label>
+		</location>
+		<location id="id21" x="-1657" y="-1334">
+			<name x="-1666" y="-1317">L3</name>
+			<label kind="invariant" x="-1674" y="-1300">t&lt;=1</label>
+		</location>
+		<branchpoint id="id22" x="-2091" y="-1232">
+		</branchpoint>
+		<init ref="id16"/>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id18"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id22"/>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id19"/>
+			<label kind="probability" x="-2040" y="-1266">1</label>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id18"/>
+			<label kind="guard" x="-1589" y="-1360">tg&gt;45</label>
+			<nail x="-1496" y="-1334"/>
+		</transition>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id21"/>
+			<label kind="guard" x="-1751" y="-1360">tg&gt;30</label>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id20"/>
+			<label kind="guard" x="-1938" y="-1359">tg&gt;15</label>
+			<nail x="-1929" y="-1334"/>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id17"/>
+			<label kind="probability" x="-2040" y="-1215">1</label>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id17"/>
+			<label kind="guard" x="-2015" y="-1190">t&gt;=1 &amp;&amp; tg&lt;=10</label>
+			<label kind="assignment" x="-1998" y="-1207">x=x+1, t=0</label>
+			<nail x="-1930" y="-1165"/>
+			<nail x="-1998" y="-1165"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id19"/>
+			<label kind="guard" x="-2015" y="-1402">t&gt;=1 &amp;&amp; tg&lt;=15</label>
+			<label kind="assignment" x="-1998" y="-1419">x=x+5, t=0</label>
+			<nail x="-1930" y="-1377"/>
+			<nail x="-1998" y="-1377"/>
+		</transition>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id20"/>
+			<label kind="guard" x="-1845" y="-1402">t&gt;=1 &amp;&amp; tg&lt;=30</label>
+			<label kind="assignment" x="-1827" y="-1419">x=x+6, t=0</label>
+			<nail x="-1760" y="-1377"/>
+			<nail x="-1828" y="-1377"/>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id21"/>
+			<label kind="guard" x="-1691" y="-1402">t&gt;=1 &amp;&amp; tg&lt;=45</label>
+			<label kind="assignment" x="-1683" y="-1419">x=x+10, t=0</label>
+			<nail x="-1615" y="-1377"/>
+			<nail x="-1683" y="-1377"/>
+		</transition>
+	</template>
+	<template>
+		<name>Template2</name>
+		<declaration>clock t=0.0, tg=0.0;
+double x=0.0;</declaration>
+		<location id="id23" x="-2235" y="-1139">
+			<name x="-2243" y="-1122">Init</name>
+			<urgent/>
+		</location>
+		<location id="id24" x="-2100" y="-1139">
+			<name x="-2109" y="-1122">L4</name>
+			<label kind="invariant" x="-2117" y="-1105">t&lt;=1</label>
+		</location>
+		<location id="id25" x="-1470" y="-1139">
+			<name x="-1444" y="-1147">Finish</name>
+		</location>
+		<location id="id26" x="-1964" y="-1139">
+			<name x="-1973" y="-1122">L1</name>
+			<label kind="invariant" x="-1981" y="-1105">t&lt;=1</label>
+		</location>
+		<location id="id27" x="-1794" y="-1139">
+			<name x="-1803" y="-1122">L2</name>
+			<label kind="invariant" x="-1811" y="-1105">t&lt;=1</label>
+		</location>
+		<location id="id28" x="-1649" y="-1139">
+			<name x="-1658" y="-1122">L3</name>
+			<label kind="invariant" x="-1666" y="-1105">t&lt;=1</label>
+		</location>
+		<init ref="id23"/>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id24"/>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id26"/>
+			<label kind="guard" x="-2057" y="-1164">tg&gt;10</label>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id25"/>
+			<label kind="guard" x="-1581" y="-1165">tg&gt;45</label>
+			<nail x="-1572" y="-1139"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id28"/>
+			<label kind="guard" x="-1743" y="-1165">tg&gt;30</label>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id27"/>
+			<label kind="guard" x="-1930" y="-1164">tg&gt;15</label>
+			<nail x="-1921" y="-1139"/>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id24"/>
+			<label kind="guard" x="-2143" y="-1207">t&gt;=1 &amp;&amp; tg&lt;=10</label>
+			<label kind="assignment" x="-2126" y="-1224">x=x+1, t=0</label>
+			<nail x="-2058" y="-1182"/>
+			<nail x="-2126" y="-1182"/>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id26"/>
+			<label kind="guard" x="-2007" y="-1207">t&gt;=1 &amp;&amp; tg&lt;=15</label>
+			<label kind="assignment" x="-1990" y="-1224">x=x+5, t=0</label>
+			<nail x="-1922" y="-1182"/>
+			<nail x="-1990" y="-1182"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id27"/>
+			<label kind="guard" x="-1837" y="-1207">t&gt;=1 &amp;&amp; tg&lt;=30</label>
+			<label kind="assignment" x="-1819" y="-1224">x=x+6, t=0</label>
+			<nail x="-1752" y="-1182"/>
+			<nail x="-1820" y="-1182"/>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id28"/>
+			<label kind="guard" x="-1683" y="-1207">t&gt;=1 &amp;&amp; tg&lt;=45</label>
+			<label kind="assignment" x="-1675" y="-1224">x=x+10, t=0</label>
+			<nail x="-1607" y="-1182"/>
+			<nail x="-1675" y="-1182"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+Process = Template();
+Process2 = Template0();
+Process3 = Template1();
+Process4 = Template2();
+// List one or more processes to be composed into a system.
+system Process, Process2, Process3, Process4;
+    </system>
+	<queries>
+		<query>
+			<formula>simulate 10 [&lt;=50] {Process.x}
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>simulate 50 [&lt;=50] {Process.x}
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>simulate 1[&lt;=45] {Process2.x}
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>simulate 10 [&lt;=30] {Process3.x}
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>simulate 10 [&lt;=50] {Process4.x}
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>

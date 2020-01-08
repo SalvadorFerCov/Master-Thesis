@@ -1,0 +1,11 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {algorithm}{\numberline {1}{\ignorespaces Data-Fitter\relax }}{16}{algorithm.1}
+\contentsline {algorithm}{\numberline {2}{\ignorespaces Learner\relax }}{16}{algorithm.2}
+\contentsline {algorithm}{\numberline {3}{\ignorespaces Measure-Distances\relax }}{17}{algorithm.3}
+\contentsline {algorithm}{\numberline {4}{\ignorespaces Incremental-Learning. An observed equation is added to the learned model as a new node or as a merged node, based on the closeness that it has among direct successors. \newline Input: similarity threshold \textit {sim\_th}, given by the user\relax }}{18}{algorithm.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

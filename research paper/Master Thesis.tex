@@ -1,0 +1,143 @@
+\documentclass[
+%%%%% Styles and Sizes
+%10pt,
+%11pt,
+%12pt,
+fancyheadings, % headings with seplines and logo
+%
+%%%%% Printing, Color and Binding
+%a4paper, 
+%a5paper,
+%twoside, % single sided printoutm 
+%oneside, % duplex printout (default)
+%% binding correction is used to compensate for the paper lost during binding
+%% of the document
+%BCOR=0.7cm, % binding correction
+%nobcorignoretitle, % do not ignore BCOR for title page
+%% the following two options only concern the graphics included by the document
+%% class
+%grayscaletitle, % keep the title in grayscale
+%grayscalebody, % keep the rest of the document in grayscale
+%
+%%%%% expert options: your mileage may vary
+%baseclass=..., % special option to use a different document baseclass
+]{stsreprt}
+
+% Information for the Titlepage
+\author{Salvador Fernandez Covarrubias}
+\title{Incremental Measurement of Model Similarities in Probabilistic Timed Automata Learning}
+\date{\today}
+\subject{Master Thesis }
+\professor{Prof. Dr. Sibylle Schupp \newline Prof. Dr.-Ing. G\"orschwin Fey}
+\advisor{M.Sc. Sascha Lehmann}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath} 
+\usepackage{tikz-uml}
+\usepackage{graphicx}
+\usepackage{subfig}
+%\usepackage{subcaption}
+\usepackage{outlines}
+\usepackage{multicol}
+\usepackage{amssymb}
+
+\newcommand{\vars}{\texttt}
+\newcommand{\func}{\textrm}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+
+\usepackage{xparse,nameref}
+\NewDocumentCommand{\chapref}{s m}{Chapter~\ref{#2}\IfBooleanF{#1}{ \nameref{#2}}}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\usepackage{natbib}
+\usepackage{appendix}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+
+% Font and Fontencoding Magic
+% FAQ: 
+% http://tex.stackexchange.com/questions/664/why-should-i-use-usepackaget1fontenc
+% http://en.wikipedia.org/wiki/Computer_Modern
+% http://tex.stackexchange.com/questions/1390/latin-modern-vs-cm-super
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%\usepackage{fix-cm}
+
+% to generate some dummy text
+\usepackage{lipsum}
+\usepackage{listings}
+
+\begin{document}
+	\frontmatter
+	\maketitle
+%	\addchap*{Eidesstattliche Erklärung}
+	\input{./theory/other/A_Affirmation.tex}
+	\tableofcontents
+	\listoffigures{}
+	\listofalgorithms
+
+	\mainmatter
+	
+	\addchap*{}
+	\input{./theory/0.Abstract/abstract.tex}
+	
+	\chapter{Introduction}
+	\label{chap:introduction}
+	\input{./theory/1.Introduction/Latex/introduction.tex}
+	
+	\chapter{Background}
+	\label{chap:background}
+	\input{./theory/2.Background/Latex/background.tex}
+	
+	\chapter{Related Work}
+	\label{chap:related_work}
+	\input{./theory/11.RelatedWork/relatedWork.tex}
+	
+	\chapter{Incremental Learning}	
+	\label{chap:incremental_Learning}
+	\input{./theory/IncrementalLearning/incremental_learning.tex} 
+	
+	\chapter{Implementation}
+	\label{chap:implementation}
+	\input{./theory/Implementation/Implementation.tex} 
+	
+	\chapter{Experiments and Evaluation}	
+	\label{chap:experimentation}
+	\input{./theory/Experiments/Experiments.tex} 
+	
+	\chapter{Conclusion and Future Work}
+	\label{chap:futureWork}
+	\input{./theory/9.futureWork/futureWork.tex}
+	
+%	\chapter{Conclusion}
+%	\label{chap:conclusion}
+%	\input{./theory/10.Conclusion/conclusion.tex}
+	
+%	\appendix
+%	\chapter{Listings}
+%	\backmatter
+	
+%	\chapter{Bibliography}
+	\bibliographystyle{plain}
+	\bibliography{sample}
+		
+%	\begin{frame}
+%	\frametitle{References}
+    \nocite{*}
+%	\renewcommand*{\bibfont}{\scriptsize}
+%	\bibliographystyle{plain}
+
+%	\end{frame}
+%\appendix
+%\section{UPPAAL Simulations}
+%\label{appendix}
+%\input{./theory/Appendix/Latex/uppaalSimulations.tex}
+	
+\end{document}

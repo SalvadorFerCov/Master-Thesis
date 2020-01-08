@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>clock tg = 0.0;</declaration>
+	<template>
+		<name>T_x</name>
+		<declaration>double x = 0.0; clock ti=0.0; clock tloc=0.0;</declaration>
+		<location id="id0" x="600" y="150">
+			<name x="600" y="175">End</name>
+		</location>
+		<location id="id1" x="-400" y="0">
+			<name x="-400" y="25">Start</name>
+			<urgent/>
+		</location>
+		<location id="id2" x="0" y="0">
+			<name x="0" y="25">L0</name>
+			<label kind="invariant" x="0" y="10">ti&lt;=1 &amp;&amp; tg&lt;=4999</label>
+		</location>
+		<branchpoint id="id3" x="-200" y="0">
+		</branchpoint>
+		<init ref="id1"/>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id2"/>
+			<label kind="probability" x="-4" y="-8">1</label>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id3"/>
+			<label kind="assignment" x="-350" y="20">tloc=0.0</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id0"/>
+			<label kind="guard" x="300" y="130">tg &gt;=4999.0</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id2"/>
+			<label kind="guard" x="0" y="-70">ti&gt;=1 &amp;&amp; tg&lt;4999</label>
+			<label kind="assignment" x="0" y="-50">x = 1.0 * pow(cos(0.01256637*tloc +4.71238898), 5), x = (x&lt;0.0) ? 0.0 : x, ti=0</label>
+			<nail x="-30" y="-30"/>
+			<nail x="30" y="-30"/>
+		</transition>
+	</template>
+	<system>Process_x = T_x();
+system Process_x;</system>
+	<queries>
+		<query>
+			<formula>simulate 1[&lt;=4999] {Process_x.x}
+			</formula>
+			<comment>Query0
+			</comment>
+		</query>
+	</queries>
+</nta>

@@ -1,0 +1,198 @@
+As previously discussed, there are three types of analyses performed to the data points of a trace.
+%
+Despite the fact that each analysis fits the data to different functions, all of them are treated as an equation that describes the tendency of the observed data from a trace.
+%
+The previous procedure will be referred as $function$ $fitting$. The next sections explain how the behavior of the data from a trace is identified and expressed as a function. 
+
+\section{Polynomial Fitting}
+
+We first assume that the data points to be analyzed are actually coming from a polynomial function.
+%
+As a polynomial function might be created with different coefficients and degrees. 
+%
+The purpose of the polynomial fitting algorithm is to
+attempt to fit the observed data points from a trace to a
+polynomial functions of degree $n$; where $n$ is a natural number ($n={0,1,2,3,...}$).
+%
+The structure of a fitted polynomial functions is as the following: $c_{1} \pm c_{2}x \pm c_{3}x^{2} \pm .... c_{n}x^{n-1}$; where $c$ is a coefficient or constant of the function, and $x$ a variable that represents the time unit of a trace. 
+%
+The degree of the function is determined by the highest exponential of its individual terms with non-zero coefficients. 
+
+\subsection{Polynomial-Analyzer Algorithm}
+
+This algorithm utilizes the \textit{PolynomialCurvFitter} class from the library \textit{apache-commons-math3}. 
+%
+The objective is to fit a set of observed data to a polynomial function of degree \emph{n} (given as a parameter) and to return the coefficients for the specified polynomial function. 
+%
+The procedure of the analysis is shown in Algorithm 3.
+\newline
+\newline
+The analysis begins by fitting the data points to a polynomial
+function of degree 0 (as seen in line 4). 
+%
+The coefficient parameters that best fit the specified degree are returned by the $fit$ method. 
+%
+The observed data is fitted to several functions of degree \textit{n}, where the maximum possible degree is reached when the highest power value of a term is close or equal to 0.
+%
+A temporal variable \emph{functionCandidate} stores the returned coefficients of each created function, to evaluate its error and store the function with least errors
+(line 4- 16).
+%
+After the maximum degree is reached, the value of the variable \emph{chosenDegree} represents the degree of the polynomial function that best fits the observed data.
+
+\newpage
+\input{./algorithms/Polynomial/Polynomial_analyzer.tex}
+
+%The method $evaluatePolynomial$ consists of retrieving a value $y'$ by solving the \emph{functionCandidate} with a time unit of the original trace as a parameter. 
+%%
+%The purpose is to retrieve a $y'$ for every time unit of the buffer, in order to compare its value against the one that comes from the original trace ($y$).
+%%
+%An error is calculated by accumulating the absolute value of the difference between $y'$ and $y$, for all $y'$ obtained from \emph{functionCandidate}.  
+%%
+%Once the error is returned to the main polynomial algorithm, the reference of the degree with the least error among all fitted polynomial functions is stored in $chosenDegree$ (as seen from line 8 to 11).
+%%
+
+
+\section{Exponential Fitting}
+In this section the data to be analyzed is assumed to come from an exponential function. 
+%
+The approach consists of first converting the incoming data to a linear function, in order to retrieve the slope and interception values. 
+%
+Once the parameters are obtained, they are used in order to represent an exponential function with the following structure: $y = ae^{bx}$, where $a$ is the slope of the linear equation and $b$ the interception. 
+
+\subsection{Exponential-Analyzer Algorithm}
+This implementation utilizes the $SimpleRegression$ class from the \textit{oapache-commons-math3} library. It estimates an ordinary least squares regression model with one independent variable. 
+%
+\\
+\\
+The algorithm begins by instantiating a new $SimpleRegression$ object called $sr$, that stores the information of the observed data.
+%
+As the library works with linear equations, the logarithm of each observed value $y$ is added to the data of  $sr$. 
+%
+Once all the data is gathered, the interception is obtained by the method $getIntercept()$ and stored in variable $a$. 
+%
+The slope is retrieved by the method $getSlope()$ and stored in variable $b$. 
+%
+And finally, all of the parameters of the fitted exponential function are stored in the $function$ array.
+
+\input{./algorithms/Exponential/Exponential_analyzer.tex}
+
+\section{Harmonic Oscillation Fitting}
+In this section it is assumed that the data comes from a sinusoidal function.
+%
+The parameters that need to be obtained to construct the expected function are: $\alpha$ , $\omega$ and $\phi$.
+%
+%The amplitude $\alpha$ of the wave has a value of 1, the frequency $\omega$ a value of $2\pi * t$ ($t$ is a time unit of the simulation), and the phase shift $\phi$ a value of 0. 
+%
+The distance between a peek point from the sinusoidal wave to another peek is called the period ($\omega$). 
+%
+The distance from the center of the wave until its peek value is called the amplitude ($\alpha$).
+%
+The phase ($\phi$) represents how a wave is horizontally shifted from its original position to the right or to the left. 
+%
+Putting all of the previous parameters together, the structure of our assumed wave function is described as the following: $y = \alpha \cdot cos (\omega \cdot x + \phi)$, where $x$ represents a time unit from the simulation. 
+
+\subsection{Harmonic-Analyzer Algorithm}
+The $HarmonicFitter$ class is utilized in this implementation from the library \textit{apache-commons-math3}, which specializes on fitting data to sinusoidal functions. 
+%
+\\
+\\
+The analysis begins by creating a $fitter$ object of type $HarmonicFitter$, which stores the observed data.
+%
+All of the information from the $observedData$ list is stored in $fitter$ without any modification. 
+%
+After storing the data, the method $fit$ is the one that fits the data to a sinusoidal function and returns an array called $function$. 
+%
+This last array contains the amplitude, period and phase parameters that will help to construct the cosine function. 
+
+\input{./algorithms/Harmonic/Harmonic_analyzer.tex}
+
+\section{Equation Structure}
+Although all of the fitted functions have different structures and parameters, they are all treated equally as equations (Fig. 5.1) with the following attributes:
+%
+The $name$ attribute is used as a unique identifier, $data$ stores the mathematical expression of the fitted function, $type$ stores the type of function that the equation resembles (e.g. polynomial, exponential or sinusoidal),
+%
+$initialTime$ represents the first time unit when the function is active in the model, 
+%
+whereas $endTime$ the last time unit that the function is active in the model.
+%
+\begin{remark}
+	The $initialTime$ variable is initialized with the value of the first data point from a trace. Nonetheless, the values from both $initialTime$ and $endTime$ can be modified at run-time in the analysis process. 
+\end{remark}
+
+\begin{figure}[b]
+	\label{EquationsStructure}
+	\centering
+	\begin{tikzpicture} 
+	\umlclass{Equation}{ 
+		name : string\\
+		data : string\\
+		type : string\\
+		initialTime : double\\
+		endTime : double\\
+	}{ } 
+	\end{tikzpicture}
+	\caption{Structure of the Equation class}
+\end{figure}
+%
+\section{Construction of Equations}
+%
+As seen in the previous algorithms, the $prepareEquation$ method is always called after each analysis is finished. 
+%
+The purpose of this method is to assemble the parameters of a fitted function, and to construct an $Equation$ object $E$ that represents the behavior of the current data.
+%The purpose of this method is to discard any repeated fitted functions from previous analyses and to construct an equation object that represents the behavior of the data.
+%
+It receives a fitted function from an analysis ($function$) and the observed data of the current buffer ($observedData$).
+%0
+The parameters of the $function$ variable are composed into its respective mathematical representation and stored in the $data$ field of $E$.
+The values for $initialTime$ and $endTime$ are set based on the time values stored in $observedData$. 
+%
+%and a specific threshold value ($threshold$) that will help to control the errors of the fitted functions. 
+%It receives a fitted function from an analysis ($lastFunction$), the current fitted function of the latest analysis ($currentFunction$), the observed data of the current buffer ($observedData$) and a specific threshold value ($threshold$) that will help to control the errors of the fitted functions. 
+%
+%The method is to evaluate the current observed data, by using the last fitted function.
+%
+%The evaluation of any function consists on using the $x$ values from the observed data in order to obtain a set of $y'$ values.
+%
+%The error of the evaluation consists on retrieving the accumulated absolute value of the difference between each $y'$ and $y$ value (as explained in section 4.1.1). 
+%
+%If the error is under the threshold value, we can re-utilize $lastFunction$ and discard $currentFunction$. 
+%
+%This means that the behavior of the observed data has not changed dramatically from the last window slide of the buffer.  
+%
+%If the threshold is surpassed by the retrieved error, then it means that the behavior of the data has changed significantly and that a new function must be introduced in order to describe the new behavior.  
+%
+%In this case, $lastFunction$ is replaced by $currentFunction$.  
+%
+%The creation of an equation object is done by the $ConstructEquation$. The data of the equation represents the $currentFunction$ with its respective time bounds obtained from the $observedData$ (as explained in section 4.4). The details of this method can only be seen on the code of the implementation. 
+
+\section{Fitted Equations Stack}
+This structure represents a last-in-first-out (LIFO) stack of $Equation$ objects, where only the best fitted equations are stored. 
+%
+The procedure of adding a new equation to the stack is explained in Algorithm \ref{Store-Equation} (please note that this method is called from Algorithm \ref{Fitter}). 
+%
+A $fittedEquation$ is automatically added to the stack whenever it is empty.
+%
+Otherwise, a reference of the last equation of the stack is taken by the $peek$ function.
+%
+If the $data$ attribute of the last equation is the same as the one from $fittedEquation$, then both equations have the same function.
+%
+In this case, only the upper bound of the last equation is replaced with the upper bound of $fittedEquation$ (no equation is added to the stack). 
+%
+But if an equation with a new function is found, then it is automatically added to the stack.
+
+\input{./algorithms/Stack/stackAlgorithm.tex}
+
+Another useful feature of the stack is that it allows to determine whether the new incoming data of the buffer is correctly fitted by the previous fitted equation or not. 
+%
+This procedure is done in the first lines of Algorithm \ref{Fitter}.
+%
+It consists of solving the last fitted function with the new incoming time unit of the buffer (after it slided). 
+%
+If the evaluated value is close to the original value of the trace, then the new data is fitted by the previous equation. Whenever this happens, only the time duration of the previous equation is updated based on the times that the buffer slided. But if the difference of the evaluated value and the original value of the trace surpasses a specific threshold, it means that the previous function is not able to fit the new incoming data with the same function, then a new analysis is performed. 
+
+%\input{./algorithms/Threshold/threshold_Algorithm.tex}
+
+
+
+%Maybe move this part fo the data fitting section, along with the equation section. 
+

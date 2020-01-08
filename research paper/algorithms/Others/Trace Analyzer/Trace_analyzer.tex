@@ -1,0 +1,34 @@
+	\documentclass{article}
+	\usepackage{amsmath}
+	\usepackage{algorithm}
+	\usepackage{algpseudocode}  
+	\newcommand{\vars}{\texttt}
+	\newcommand{\func}{\textrm}
+	
+	\begin{document}
+		
+	\begin{algorithm}
+		\caption{Learner. Inputs: Empty recreated model $rm$, trace observation $trace$, similarity threshold $s_{th}$. Output: learned recreated model $rm$}
+		\label{learner}
+		\begin{algorithmic}[1]
+			\Procedure{learner}{trace}
+			\For{$i\gets 0, traceArray.Size()$}
+			\State $trace\gets traceArray[i]$
+			\For{$j\gets 0, trace.Size()$}
+			\State $traceData\gets trace[j]$
+			\If{$ traceData.isNumeric() $}
+			
+			\State $\vars{buffer} \gets \func{bufferInit}(\vars{timeStep, bufferSize, traceData})$
+			
+			\State $\vars{analysis} \gets \func{fitData} (\vars{timeStep, buffer, traceData})$
+			
+			\State $traceAnalysisList.add(\vars{analysis});$
+			\EndIf						
+			\EndFor
+			\EndFor
+			\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}
+
+\end{document} 
+

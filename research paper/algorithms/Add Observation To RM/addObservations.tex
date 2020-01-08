@@ -1,0 +1,48 @@
+	\documentclass{article}
+	\usepackage{amsmath}
+	\usepackage{algorithm}
+	\usepackage{algpseudocode}  
+	\newcommand{\vars}{\texttt}
+	\newcommand{\func}{\textrm}
+	\algnewcommand\algorithmicforeach{\textbf{for each}}
+	\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+	
+	\begin{document}
+		
+	\begin{algorithm}
+		\caption{Add Equation. An observed equation is added to the learned model as a new node or as a merged node, based on the closeness that it has among all involved nodes.
+		\newline Input: similarity threshold \textit{sim\_th}}
+		\label{addEquation}
+		\begin{algorithmic}[1]
+			\Procedure{add\_Equation}{directSuccessorsDistances, equation}
+			
+			\State $closestNode \gets \func{getClosestDistanceAboveThreshold(\vars{directSuccessorsDistances, sim\_th})}$
+			\State $farNode \gets \func{getClosestDistanceBelowThreshold(\vars{directSuccessorsDistances, sim\_th})}$
+			
+			\If {closestNode.isNotEmpty()}
+%			\ForEach {$closeNode \in closeNodes$}
+				\State $bestChange\gets \func{evaluateMerge(\vars{closestNode, equation})}$
+				\If {bestChange == addition}
+					\State \Return $\func{addNodeToLearnedModel(\vars{closestNode,equation})}$
+				\Else
+					\State	\Return $\func{updateNode(\vars{closestNode,bestChange})}$
+				\EndIf
+%			\EndFor
+			\EndIf
+			
+%			\ForEach {$farNode \in farNodes$}
+			\If {farNode.isNotEmpty()}
+			\If {farNode.exists(equation)}
+				\State	\Return $\func{increaseWeight(\vars{farNode})}$ 	
+			\Else
+				\State	\Return $\func{addNodeToLearnedModel(\vars{farNode, equation})}$
+			\EndIf
+%			\EndFor
+			\EndIf
+		
+			\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}
+
+\end{document} 
+

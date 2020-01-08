@@ -1,0 +1,18 @@
+Real-life systems such as embedded controllers and communication protocols are becoming more complex and difficult to understand and verify, mainly due to \textit{non-deterministic} behaviors and large number of components that may interact with each other along processes.
+%
+Automata learning has been used as a technique to tackle this problem, by inferring models from observations of a system. There exists two principle approaches called \textit{passive and active}. Passive learning mainly consists of analyzing observations without interacting with the system, while active learning interacts with a system to request additional information of observations, if needed \cite{onlinePassiveLearning}. 
+%
+In this project, we decided to apply a passive learning approach to learn non-deterministic systems, as allowing interaction for active learning might become very difficult and sometimes unfeasible in practice, due to lack of resources or documentation of the system to observe. Nevertheless, we do interact with a model that represents the observed system to be learned, with the sole purpose of evaluating the progress of our learning approach. 
+%
+Our idea consists of learning and modelling observations of a system \textit{on-the-fly}, by measuring and evaluating incoming data incrementally. For this, we utilize \textit{Euclidean distances}, \textit{cost functions} and \textit{graph matching} techniques to indicate the progress of learning and to define the structure of our \textit{learned model}.\\ \\
+%
+We begin this paper by reviewing the conceptual foundations of \textit{automata theory}, the software tool \textit{Uppaal}, that was used in this project to observe systems and \textit{graph theory} in \Cref{chap:background}. 
+%
+Afterwards, we discuss in \Cref{chap:related_work} the main topics that inspired this paper and that are also on-going related research topics like \textit{active automata learning}, \textit{automata optimization} and \textit{graph matching}. 
+%
+The main concepts, algorithms and ideas of the proposed \textit{incremental learning} approach are developed an explained in \Cref{chap:incremental_Learning}. An overview of the implemented tool and its features is given in \Cref{chap:implementation}. We then show a series of experiments in \Cref{chap:experimentation}, which demonstrate the different levels of abstraction that can be obtained by learning automata incrementally with the use of different parameters in our applied cost functions and Euclidean distances. 
+%
+And finally, in \Cref{chap:futureWork}, we discuss the feasibility of the incremental learning approach, how it can be extended and applied to other relevant areas of automata learning like \textit{automata minimization}, and we also mention some of the limitations and possible extensions of the approach. 
+%
+%And at last, we sum up the feasibility of applying this concept in an automated fashion by discussing the pros and cons of our proposed incremental learning approach in \Cref{chap:conclusion}.
+

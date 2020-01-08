@@ -1,0 +1,129 @@
+\begin{thebibliography}{10}
+
+\bibitem{timedAutomata}
+Rajeev Alur.
+\newblock Timed automata.
+\newblock In {\em International Conference on Computer Aided Verification},
+  pages 8--22. Springer, 1999.
+
+\bibitem{theGraphMatchingProblem}
+Endika Bengoetxea.
+\newblock {\em The graph matching problem}.
+\newblock PhD thesis, PhD Thesis, 2002.
+
+\bibitem{bengoetxea2002inexact}
+Endika Bengoetxea, Pedro Larranaga, Isabelle Bloch, Aymeric Perchant, and
+  Claudia Boeres.
+\newblock Inexact graph matching by means of estimation of distribution
+  algorithms.
+\newblock {\em Pattern Recognition}, 35(12):2867--2880, 2002.
+
+\bibitem{minimizationOfautomata}
+Jean Berstel, Luc Boasson, Olivier Carton, and Isabelle Fagnot.
+\newblock Minimization of automata.
+\newblock {\em arXiv preprint arXiv:1010.5318}, 2010.
+
+\bibitem{graphMatching}
+Vincenzo Carletti.
+\newblock {\em Exact and Inexact Methods for Graph Similarity in Structural
+  Pattern Recognition PhD thesis of Vincenzo Carletti.}
+\newblock PhD thesis, Universit{\'e} de Caen; Universita degli studi di
+  Salerno, 2016.
+
+\bibitem{carletti2016exact}
+Vincenzo Carletti.
+\newblock {\em Exact and Inexact Methods for Graph Similarity in Structural
+  Pattern Recognition PhD thesis of Vincenzo Carletti.}
+\newblock PhD thesis, Universit{\'e} de Caen; Universita degli studi di
+  Salerno, 2016.
+
+\bibitem{patternRecognition}
+Donatello Conte, Pasquale Foggia, Carlo Sansone, and Mario Vento.
+\newblock Thirty years of graph matching in pattern recognition.
+\newblock {\em International journal of pattern recognition and artificial
+  intelligence}, 18(03):265--298, 2004.
+
+\bibitem{optimizationOfAutomata}
+Jan Daciuk.
+\newblock {\em Optimization of automata}.
+\newblock Gda{\'n}sk University of Technology Publishing House, 2014.
+
+\bibitem{uppaalSmcTutorial}
+Alexandre David, Kim~G Larsen, Axel Legay, Marius Miku{\v{c}}ionis, and
+  Danny~B{\o}gsted Poulsen.
+\newblock Uppaal smc tutorial.
+\newblock {\em International Journal on Software Tools for Technology
+  Transfer}, 17(4):397--415, 2015.
+
+\bibitem{esparza2012automata}
+Javier Esparza.
+\newblock Automata theory: An algorithmic approach (lecture notes), 2012.
+
+\bibitem{fortin1996graph}
+Scott Fortin.
+\newblock The graph isomorphism problem.
+\newblock 1996.
+
+\bibitem{graphSemanticMatching}
+Fausto Giunchiglia, Pavel Shvaiko, and Mikalai Yatskevich.
+\newblock S-match: an algorithm and an implementation of semantic matching.
+\newblock In {\em European semantic web symposium}, pages 61--75. Springer,
+  2004.
+
+\bibitem{activeLearning}
+Falk Howar and Bernhard Steffen.
+\newblock Active automata learning in practice.
+\newblock In {\em Machine Learning for Dynamic Software Analysis: Potentials
+  and Limits}, pages 123--148. Springer, 2018.
+
+\bibitem{kwiatkowska2006performance}
+Marta Kwiatkowska, Gethin Norman, David Parker, and Jeremy Sproston.
+\newblock Performance analysis of probabilistic timed automata using digital
+  clocks.
+\newblock {\em Formal Methods in System Design}, 29(1):33--78, 2006.
+
+\bibitem{probabilisticTimedAutomata}
+Marta Kwiatkowska, Gethin Norman, Roberto Segala, and Jeremy Sproston.
+\newblock Automatic verification of real-time systems with discrete probability
+  distributions.
+\newblock {\em Theoretical Computer Science}, 282(1):101--150, 2002.
+
+\bibitem{uppaalNutshell}
+Kim~G Larsen, Paul Pettersson, and Wang Yi.
+\newblock Uppaal in a nutshell.
+\newblock {\em International Journal on Software Tools for Technology Transfer
+  (STTT)}, 1(1):134--152, 1997.
+
+\bibitem{losing2018incremental}
+Viktor Losing, Barbara Hammer, and Heiko Wersing.
+\newblock Incremental on-line learning: A review and comparison of state of the
+  art algorithms.
+\newblock {\em Neurocomputing}, 275:1261--1274, 2018.
+
+\bibitem{onlinePassiveLearning}
+Alexander Maier.
+\newblock Online passive learning of timed automata for cyber-physical
+  production systems.
+\newblock In {\em 2014 12th IEEE International Conference on Industrial
+  Informatics (INDIN)}, pages 60--66. IEEE, 2014.
+
+\bibitem{eucledianDistance}
+Jan Ramon, Maurice Bruynooghe, and Wim Van~Laer.
+\newblock Distance measures between atoms.
+\newblock In {\em CompulogNet Area Meeting on Computational Logic and Machine
+  Learning}, pages 35--41, 1998.
+
+\bibitem{activeAtuomata}
+Bernhard Steffen, Falk Howar, and Maik Merten.
+\newblock Introduction to active automata learning from a practical
+  perspective.
+\newblock In {\em International School on Formal Methods for the Design of
+  Computer, Communication and Software Systems}, pages 256--296. Springer,
+  2011.
+
+\bibitem{graphSimilarityScoringMatching}
+Laura~A Zager and George~C Verghese.
+\newblock Graph similarity scoring and matching.
+\newblock {\em Applied mathematics letters}.
+
+\end{thebibliography}

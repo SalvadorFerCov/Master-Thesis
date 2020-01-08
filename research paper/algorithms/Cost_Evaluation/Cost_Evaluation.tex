@@ -1,0 +1,65 @@
+	\begin{algorithm}
+%		\caption{Merge. 
+%		\newline Input: Addition fee \textit{additionFee}, time step fee \textit{timeFee}, error propagation fee \textit{propagationFee}}
+		\caption{addLeastExpensiveChange}
+		\label{addLeastExpensiveChange}
+		\begin{algorithmic}[1]
+			\Procedure{addLeastExpensiveChange}{closeNode, equation}
+				\State $nodeReplacement \gets \func{evaluateReplacement(\vars{closeNode, equation})}$
+				\State $nodeAddition \gets \func{evaluateAddition(\vars{closeNode, equation})}$
+			    \State $lowestCost \gets getLowestCost(nodeReplacement,nodeAddition)$
+			    \State $lastModifiedNode \gets learnedModel.add(lowestCost)$
+				
+				\State \Return $lastModifiedNode$
+				
+			\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}
+
+	\begin{algorithm}
+	\caption{evaluateReplacement}
+	\label{evaluateReplacement}
+	\begin{algorithmic}[1]
+		\Procedure{evaluateReplacement}{closeNode, observedEquation}
+		
+		\State $timeConstraints \gets \func{getTimeConstraints(\vars{closeNode, equation})}$
+		\State $mergedTimes \gets timeConstraints.union $
+		\State $closeEquation \gets closeNode.getEquation() $
+		\State $mergedEquation \gets \func{mergeEquations(\vars{closeEquation, observedEquation, mergedTimes})}$
+		\State $propagation \gets \func{mergePropagation(\vars{closeNode, mergedEquation})}$
+		\State $improvement \gets propagation.improvement$
+		\State $unseenTimes \gets propagation.unsenTimes$
+		\State $cost \gets unsenTimes*timeCost + improvement*propagationCost$
+		
+		\State \Return $cost$
+		
+		\EndProcedure
+	\end{algorithmic}
+	\end{algorithm}
+
+	\begin{algorithm}
+	\caption{mergePropagation}
+	\label{mergePropagation}
+	\begin{algorithmic}[1]
+		\Procedure{mergePropagation}{closeNode, mergedEquation}
+		
+		\State $directSuccessors \gets closeNode.getDirectSuccessors()$
+		\State $mergedPoints \gets evaluatefunction(mergedEquation.fittedFunction, mergedtimes) $
+		
+%		\ForEach {$successor \in directSuccessors$}
+%			\State $successorPoints \gets  evaluatefunction(successor.fittedFunction, mergedtimes)$
+%			\State $ $
+%		\EndFor
+		
+		\State $closeEquation \gets closeNode.getEquation() $
+		\State $mergedEquation \gets \func{mergeEquations(\vars{closeEquation, observedEquation, mergedTimes})}$
+		\State $propagation \gets \func{mergePropagation(\vars{closeNode, mergedEquation})}$
+		\State $improvement \gets propagation.improvement$
+		\State $unseenTimes \gets propagation.unsenTimes$
+		\State $cost \gets unsenTimes*timeCost + improvement*propagationCost$
+		
+		\State \Return $cost$
+		
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}

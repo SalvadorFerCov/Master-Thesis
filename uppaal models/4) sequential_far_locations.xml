@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.</declaration>
+	<template>
+		<name x="5" y="5">Template</name>
+		<declaration>// Place local declarations here.
+clock t=0.0, tg=0.0;
+double x=0.0;</declaration>
+		<location id="id0" x="-1793" y="-1181">
+			<name x="-1802" y="-1164">L1</name>
+			<label kind="invariant" x="-1810" y="-1147">t&lt;=1</label>
+		</location>
+		<location id="id1" x="-1955" y="-1181">
+			<name x="-1963" y="-1164">Init</name>
+			<urgent/>
+		</location>
+		<location id="id2" x="-1606" y="-1181">
+			<name x="-1615" y="-1164">L2</name>
+			<label kind="invariant" x="-1623" y="-1147">t&lt;=1</label>
+		</location>
+		<location id="id3" x="-1402" y="-1181">
+			<name x="-1411" y="-1164">L3</name>
+			<label kind="invariant" x="-1419" y="-1147">t&lt;=1</label>
+		</location>
+		<init ref="id1"/>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-1530" y="-1207">tg&gt;20</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-1734" y="-1207">tg&gt;10</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-1836" y="-1249">t&gt;=1 &amp;&amp; tg&lt;=10</label>
+			<label kind="assignment" x="-1819" y="-1266">x=x+1, t=0</label>
+			<nail x="-1751" y="-1224"/>
+			<nail x="-1819" y="-1224"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id0"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-1649" y="-1249">t&gt;=1 &amp;&amp; tg&lt;=20</label>
+			<label kind="assignment" x="-1632" y="-1266">x=x-1, t=0</label>
+			<nail x="-1564" y="-1224"/>
+			<nail x="-1632" y="-1224"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-1445" y="-1249">t&gt;=1 &amp;&amp; tg&lt;=30</label>
+			<label kind="assignment" x="-1428" y="-1266">x=x+5, t=0</label>
+			<nail x="-1360" y="-1224"/>
+			<nail x="-1428" y="-1224"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+Process = Template();
+// List one or more processes to be composed into a system.
+system Process;
+    </system>
+	<queries>
+		<query>
+			<formula>simulate 50 [&lt;=30] {Process.x}
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>

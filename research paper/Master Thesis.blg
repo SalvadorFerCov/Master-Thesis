@@ -1,0 +1,11 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Master Thesis.aux
+The style file: plain.bst
+Database file #1: sample.bib
+I was expecting an "="---line 112 of file sample.bib
+ :  
+ :  volume={21},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in fortin1996graph
+Warning--empty year in graphSimilarityScoringMatching
+(There was 1 error message)

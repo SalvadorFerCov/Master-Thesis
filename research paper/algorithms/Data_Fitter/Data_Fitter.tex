@@ -1,0 +1,33 @@
+\begin{algorithm}
+	\caption{Data-Fitter}
+	\label{dataFitter}
+	\begin{algorithmic}[1]
+		\Procedure{fitdata}{timeStep, buffer, traceData}
+		
+		\While{$ windowSlideLimit == false $}
+%		
+%		\State $lastEquationFits \gets evaluateLastEquation(\vars{buffer})$
+%		
+%		\If{ $lastEquationFits = true$}
+%			\State $updateLastEquationsConstraint(\vars{buffer})$
+%		\Else
+		
+		\ForEach{$entry \in buffer $}
+			\State $time\gets entry.getKey()$
+			\State $value\gets entry.getValue()$
+			\State $observations.add(time,value)$
+		\EndFor
+		
+		\State $equation\gets \func{fitEquation}(\vars{observations})$
+		\State $\func{equationsList.add}(\vars{equation})$
+		
+%		\EndIf
+		
+		\State $ windowSlideLimit \gets \func{slideBuffer}(\vars{timeStep, traceData})$
+		
+		\EndWhile
+		
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+	

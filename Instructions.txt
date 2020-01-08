@@ -1,0 +1,5 @@
+There are two possibilities to run the application:
+
+1) Production Environment - By going to the dist folder and double-clicking the index application.
+2) Development Environment - By navigating to the src folder via command-line, downloading the dependencies with command "npm install", and finally
+   running the command "npm start" to run the application. 
