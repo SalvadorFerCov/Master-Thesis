@@ -22,7 +22,7 @@ Run the following command to install all of the needed dependencies
 npm install 
 ```
 
-Once the dependencies have been installed, run the following command to run the program in development mode
+Once the dependencies have been installed, execute the following command to run the program in development mode
 
 ```
 npm run start
