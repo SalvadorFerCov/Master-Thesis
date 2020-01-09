@@ -2,6 +2,8 @@
 Implementation for the paper: Incremental Measurement of Model Similarities in Probabilistic Timed Automata Learning
 https://www.sts.tuhh.de/pw-and-m-theses/2019/salvador19.pdf
 
+This tool is used to analyze, learn and visualize results from UPPAAL (http://www.uppaal.org/) model simulations. 
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
@@ -45,10 +47,21 @@ npm run build
 
 The bundle is located in the dist folder
 
+## How to use
+
+- Choose a simulation run file (txt) exported from an UPPAAL model. Simulation files can be found in the experiments folder, and UPPAAL model examples can be found in the uppaal models folder. 
+- Click fit, to fit the curve of the data of the simulation
+- Navigate to the FITTER MANAGER tab to see the fitted equations
+- Navigate to the LEARNER tab to learn the model based on its simulations
+- Choose the desired learning parameters and click the learn button. One can import the original model from which the simulation were taken, to compare how close the recreation of the model is. 
+- Navigate to the GRAPH MATCHER tab to match two graphs against each other 
+
 ## Built With
 * [ReactJS](https://reactjs.org/) - JavaScript Framework
-* [Redux](https://redux.js.org/) - State container 
-* [Jest](https://jestjs.io/) - Testing for some libraries
+* [Redux](https://redux.js.org/) - State Container 
+* [Cytoscape](https://js.cytoscape.org/) - Graph Theory Library
+* [ml-levenberg-marquardt](https://github.com/mljs/levenberg-marquardt) - Curve Fitting Library
+* [Jest](https://jestjs.io/) - Testing
 
 ## Author
 
