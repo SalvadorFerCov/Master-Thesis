@@ -36,9 +36,16 @@ The tests can be run by using the following command
 npm run test
 ```
 
+## Building the project
+
+The project can be built by running the following command
+```
+npm run build
+```
+
+The bundle is located in the dist folder
 
 ## Built With
-* [NPM](https://docs.npmjs.com/) - Dependency Management
 * [ReactJS](https://reactjs.org/) - JavaScript Framework
 * [Redux](https://redux.js.org/) - State container
 
