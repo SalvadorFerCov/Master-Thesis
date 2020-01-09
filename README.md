@@ -1,5 +1,6 @@
 # Master-Thesis
 Implementation for the paper: Incremental Measurement of Model Similarities in Probabilistic Timed Automata Learning
+https://www.sts.tuhh.de/pw-and-m-theses/2019/salvador19.pdf
 
 ## Getting Started
 
