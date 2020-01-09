@@ -53,7 +53,7 @@ The bundle is located in the dist folder
 - Click fit, to fit the curve of the data of the simulation
 - Navigate to the FITTER MANAGER tab to see the fitted equations
 - Navigate to the LEARNER tab to learn the model based on its simulations
-- Choose the desired learning parameters and click the learn button. One can import the original model from which the simulation were taken, to compare how close the recreation of the model is. 
+- Choose the desired learning parameters and click the learn button. One can import the original model from which the simulation were taken, to match and learn two models simultaneously. Graph must be on JSON format for the library to parse it, examples   can be found on the json graphs folder. 
 - Navigate to the GRAPH MATCHER tab to match two graphs against each other 
 - More details regarding this tool can be found on the research paper mentioned above
 
