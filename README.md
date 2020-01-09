@@ -50,6 +50,6 @@ The bundle is located in the dist folder
 * [Redux](https://redux.js.org/) - State container 
 * [Jest](https://jestjs.io/) - Testing for some libraries
 
-## Authors
+## Author
 
 * **Salvador Fernandez Covarrubias** - *Master Thesis*
