@@ -55,7 +55,7 @@ The bundle is located in the dist folder
 - Navigate to the LEARNER tab to learn the model based on its simulations
 - Choose the desired learning parameters and click the learn button. One can import the original model from which the simulation were taken, to compare how close the recreation of the model is. 
 - Navigate to the GRAPH MATCHER tab to match two graphs against each other 
-- More details regarding this tool can be fond on the research paper mentioned above
+- More details regarding this tool can be found on the research paper mentioned above
 
 ## Built With
 * [ReactJS](https://reactjs.org/) - JavaScript Framework
