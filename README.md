@@ -2,6 +2,10 @@
 Implementation for the paper: Incremental Measurement of Model Similarities in Probabilistic Timed Automata Learning
 https://www.sts.tuhh.de/pw-and-m-theses/2019/salvador19.pdf
 
+The front-end utilizes the JavaScript open source library of React, along with Redux. 
+
+The back-end was developed with JavaScript ES6. 
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
