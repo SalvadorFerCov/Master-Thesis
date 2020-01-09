@@ -47,7 +47,8 @@ The bundle is located in the dist folder
 
 ## Built With
 * [ReactJS](https://reactjs.org/) - JavaScript Framework
-* [Redux](https://redux.js.org/) - State container
+* [Redux](https://redux.js.org/) - State container 
+* [Jest](https://jestjs.io/) - Testing for some libraries
 
 ## Authors
 
