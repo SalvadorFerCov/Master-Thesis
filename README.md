@@ -49,7 +49,7 @@ The bundle is located in the dist folder
 
 ## How to use
 
-- Choose a simulation run file (txt) exported from an UPPAAL model. Simulation files can be found in the experiments folder, and UPPAAL model examples can be found in the uppaal models folder. 
+- Choose a simulation run file (txt) exported from an UPPAAL model simulator. Simulation files can be found in the experiments folder, and UPPAAL model examples can be found in the uppaal models folder. 
 - Click fit, to fit the curve of the data of the simulation
 - Navigate to the FITTER MANAGER tab to see the fitted equations
 - Navigate to the LEARNER tab to learn the model based on its simulations
